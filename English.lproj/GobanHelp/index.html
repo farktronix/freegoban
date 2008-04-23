@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+   <TITLE>Goban  Help</TITLE>
+		<META NAME="AppleTitle" CONTENT="Goban Help">
+		<META NAME="AppleFont" CONTENT="Helvetica,Arial">
+		<META NAME="AppleSearchResultsFont" CONTENT="Geneva,Arial">
+</HEAD>
+<BODY>
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH = 100%>
+        <TR>
+                <TD ROWSPAN="2" WIDTH="230"><H1><IMG SRC="sente.gif" ALT="Sen:te"></H1></TD>
+                <TD ALIGN="RIGHT"><H1><IMG SRC="GobanIcon.png" ALT="Goban"> Goban Help</H1></TD>
+        </TR>
+        <TR>
+		<TD ALIGN="RIGHT" VALIGN="BOTTOM"> </TD>
+        </TR>
+</TABLE>
+
+<H3>What is Goban?</H3>
+<P>Goban is a program to play Go on Mac OS X.</P>
+
+<H3>What is Go and how is it played?</H3>
+<P>Good entry points include <A HREF="http://www.well.com/user/mmcadams/gointro.html">Introduction to Go</A> by Mindy McAdams; and <A HREF="http://www.cwi.nl/~jansteen/go/index.html">Go, An Addictive Game</A> by Jan van der Steen.
+</P>
+
+<H3>How do I start a game?</H3>
+<P>The Show Info menu toggles a panel where you can set the parameters of the game.</P>
+
+<H3>How do I finish a game?</H3>
+<P>A game is finished when both players pass consecutively. Since release v10, Goban attempts to automatically score the game. In Go, even scoring finished games is not an easy task, and Goban will give up trying if it does not succeed to score a game in less than 30 seconds. Goban's choices about what stones are dead or alive can be manually overriden by selecting a stone or group of stones. The board changes to reflect the status you give to the stones, and the score is updated.</P>
+
+<H3>What is GNU Go?</H3>
+<P>Goban is designed to be compatible with a variety of Go playing programs, and currently includes <A HREF="GNUGoAbout.txt">GNU Go</A>. GNU Go is distributed under the <A HREF="GNUGoLicense.txt">GNU GENERAL PUBLIC LICENSE</A> .  Contact <A HREF="mailto: gnugo@gnu.org">gnugo@gnu.org</A>, or see
+<A HREF="http://www.gnu.org/software/gnugo/">http://www.gnu.org/software/gnugo/</A> for more information.
+</P>
+
+<H3>How do I set the strength of the program?</H3>
+<P>Use of handicap stones is the best way to make a game even. Alternatively, you can make the program stronger (and slower) by increasing its strength in the Preferences panel. </P>
+
+<H3>How do I use Goban with a program other than GNU Go, or a newer version of GNU Go?</H3>
+<P>In The Preferences panel you can specify the launch path and launch arguments to be used for your alternative program. Since release v12, Goban supports the GTP (Go Text Protocol, version 1) as well as the GMP (Go Modem Protocol). Compatible programs should be usable with Goban, but none other than GNU Go have been tested yet.
+<P>The commands that Goban sends to a GTP program are: <TT>boardsize, fixed_handicap, komi, black, white, genmove_black, genmove_white, undo, quit</TT>.</P>
+
+<H3>How do I resume a saved game?</H3>
+<P>When a game is loaded, Goban looks for registered programs with names matching those from the file's players. If it finds one, it will be used and play will resume automatically. This is currently possible only with the buit-in GNU Go program and other GTP programs. </P>
+
+<H3>How can I give feedback?</H3>
+<P>By sending an email to <A HREF="mailto:goban@sente.ch"> goban@sente.ch </A>.</P>
+<P>For the latest information about Goban, see <A HREF="http://www.sente.ch/software/goban"> http://www.sente.ch/software/goban </A>.</P>
+
+<H3>Who developed Goban?</H3>
+<P>Sen:te is a software development company based in Lausanne, Switzerland. We've been doing NeXTSTEP, OPENSTEP, WebObjects, Mac OS X / Cocoa programming since the very beginning. More information about us can be found at <A HREF="http://www.sente.ch">www.sente.ch</A>.</P>
+
+<H3>Under which License is Goban distributed?</H3>
+<P>Goban is copyrighted work. Since release v12, Goban is free software, distributed under the GNU General Public License:</P>
+<P>Copyright (c) 1997-2001, Sen:te (Sente SA).  All rights reserved.</P>
+
+<P>This program is free software; you can redistribute it and/or
+modify it under the terms of the <A HREF="GnuGoLicense.txt">GNU General Public License</A> 
+as published by the Free Software Foundation - version 2.</P>
+                                                            
+<P>This program is distributed in the hope that it will be     
+useful, but WITHOUT ANY WARRANTY; without even the implied  
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR     
+PURPOSE.  See the GNU General Public License in file COPYING
+for more details.</P>                                      
+                                                            
+<P>You should have received a copy of the GNU General Public   
+License along with this program; if not, write to the Free  
+Software Foundation, Inc., 59 Temple Place - Suite 330,     
+Boston, MA 02111, USA.</P>                                     
+
+<P>For more information about this license, contact<A HREF="mailto:goban@sente.ch"> goban@sente.ch</A>.</P>
+
+<H3>Acknowledgements</H3>
+<P>Thanks to:</P>
+<UL>
+<LI>Guy Moreillon, for his help with the design of the icons, stones, and Persistence Of Vision (Povray) programming;
+<LI>Antti Huima, for his SGF utility library; 
+<LI>William Shubert, for his implementation of the Go Modem Protocol (GMP);
+<LI>The GNU Go Team, for GNU Go, a nice and free Go playing program.
+<LI>Stephan Somogyi, for his feedback, help and encouragements.
+<LI>Our users.
+</UL>
+
+<P>Marco Scheurer, Sen:te, Lausanne</P>
+
+<P>Copyright (c) 1997-2001, Sen:te (Sente SA).  All rights reserved.</P>
+
+</BODY>
+</HTML>

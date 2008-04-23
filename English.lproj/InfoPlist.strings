@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Goban";
+CFBundleShortVersionString = "Goban version 0.1";
+CFBundleGetInfoString = "Goban version 0.1, Copyright 2000 MyGreatSoftware.";
+NSHumanReadableCopyright = "Copyright 2000 MyGreatSoftware.";

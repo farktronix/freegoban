@@ -1,0 +1,108 @@
+{
+    IBClasses = (
+        {CLASS = Document; LANGUAGE = ObjC; SUPERCLASS = NSDocument; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = GobanBoardView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            ACTIONS = {
+                makeFirstMove = id; 
+                pass = id; 
+                playStone = id; 
+                reset = id; 
+                resign = id; 
+                showGameEnd = id; 
+                showGameStart = id; 
+                showInfo = id; 
+                showNextMove = id; 
+                showPreviousMove = id; 
+                showTerritory = id; 
+                undoMove = id; 
+            }; 
+            CLASS = GobanGameDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {grid = id; inspector = id; }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            CLASS = GobanInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                document = id; 
+                drawer = id; 
+                holderView = id; 
+                moveInspector = id; 
+                popUp = id; 
+                rulesInspector = id; 
+                scoreInspector = id; 
+                tabView = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = GobanMatrix; LANGUAGE = ObjC; SUPERCLASS = NSMatrix; }, 
+        {
+            CLASS = GobanMoveInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {view = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                play = id; 
+                setBoardSize = id; 
+                setHandicap = id; 
+                setKomi = id; 
+                setRuleset = id; 
+            }; 
+            CLASS = GobanRulesInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                blackKindControl = id; 
+                blackName = id; 
+                boardSizeControl = id; 
+                handicapControl = id; 
+                komiControl = id; 
+                playControl = id; 
+                rulesetControl = id; 
+                view = id; 
+                whiteKindControl = id; 
+                whiteName = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {showTerritory = id; }; 
+            CLASS = GobanScoreInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                blackCapturedCountField = id; 
+                blackScoreField = id; 
+                blackSurroundedCountField = id; 
+                blackTerritoryCountField = id; 
+                resultField = id; 
+                showTerritoryButton = id; 
+                view = id; 
+                whiteCapturedCountField = id; 
+                whiteKomi = id; 
+                whiteScoreField = id; 
+                whiteSurroundedCountField = id; 
+                whiteTerritoryCountField = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {showToolbar = id; }; 
+            CLASS = GobanToolbar; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {document = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = GobanView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {matrix = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = MySound; LANGUAGE = ObjC; SUPERCLASS = Sound; }
+    ); 
+    IBVersion = 1; 
+}

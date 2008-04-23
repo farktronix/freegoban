@@ -1,0 +1,82 @@
+{
+    "Go.BoardSize" = "19";
+    "Go.RuleSet" = "Japanese";
+    "Go.Komi" = "5.5";
+    "SGF.GameType" = "1";
+    "Go.StarPoints" = {
+        "7" =  (ee, cc, ce, ec);
+        "9" =  (gg, cc, cg, gc, ee);
+        "11" = (ii, cc, ci, ic, ff);
+        "13" = (jj, dd, dj, jd, gg);
+        "15" = (ll, dd, dl, ld, hd, hl, dh, lh, hh);
+        "17" = (nn, dd, dn, nd, id, in, di, ni, ii);
+        "19" = (pp, dd, dp, pd, jd, jp, dj, pj, jj);
+    };
+    "Go.JapaneseRuleSet.HandicapPoints" = {
+        "7" = {
+            "2" = (ee, cc);
+            "3" = (ee, cc, ec);
+            "4" = (ee, cc, ce, ec);
+        };
+        "9" = {
+            "2" = (gg, cc);
+            "3" = (gg, cc, gc);
+            "4" = (gg, cc, cg, gc);
+            "5" = (gg, cc, cg, gc, ee);
+            "6" = (gg, cc, cg, gc, ec, eg);
+            "7" = (gg, cc, cg, gc, ec, eg, ee);
+            "8" = (gg, cc, cg, gc, ec, eg, ce, ge);
+            "9" = (gg, cc, cg, gc, ec, eg, ce, ge, ee);
+        };
+        "11" = {
+            "2" = (ii, cc);
+            "3" = (ii, cc, ic);
+            "4" = (ii, cc, ci, ic);
+            "5" = (ii, cc, ci, ic, ff);
+            "6" = (ii, cc, ci, ic, fc, fi);
+            "7" = (ii, cc, ci, ic, fc, fi, ff);
+            "8" = (ii, cc, ci, ic, fc, fi, cf, if);
+            "9" = (ii, cc, ci, ic, fc, fi, cf, if, ff);
+        };
+        "13" = {
+            "2" = (jj, dd);
+            "3" = (jj, dd, jd);
+            "4" = (jj, dd, dj, jd);
+            "5" = (jj, dd, dj, jd, gg);
+            "6" = (jj, dd, dj, jd, gd, gj);
+            "7" = (jj, dd, dj, jd, gd, gj, gg);
+            "8" = (jj, dd, dj, jd, gd, gj, dg, jg);
+            "9" = (jj, dd, dj, jd, gd, gj, dg, jg, gg);
+        };
+        "15" = {
+            "2" = (ll, dd);
+            "3" = (ll, dd, ld);
+            "4" = (ll, dd, dl, ld);
+            "5" = (ll, dd, dl, ld, hh);
+            "6" = (ll, dd, dl, ld, hd, hl);
+            "7" = (ll, dd, dl, ld, hd, hl, hh);
+            "8" = (ll, dd, dl, ld, hd, hl, dh, lh);
+            "9" = (ll, dd, dl, ld, hd, hl, dh, lh, hh);
+        };
+        "17" = {
+            "2" = (nn, dd);
+            "3" = (nn, dd, nd);
+            "4" = (nn, dd, dn, nd);
+            "5" = (nn, dd, dn, nd, ii);
+            "6" = (nn, dd, dn, nd, id, in);
+            "7" = (nn, dd, dn, nd, id, in, ii);
+            "8" = (nn, dd, dn, nd, id, in, di, ni);
+            "9" = (nn, dd, dn, nd, id, in, di, ni, ii);
+        };
+        "19" = {
+            "2" = (pp, dd);
+            "3" = (pp, dd, pd);
+            "4" = (pp, dd, dp, pd);
+            "5" = (pp, dd, dp, pd, jj);
+            "6" = (pp, dd, dp, pd, jd, jp);
+            "7" = (pp, dd, dp, pd, jd, jp, jj);
+            "8" = (pp, dd, dp, pd, jd, jp, dj, pj);
+            "9" = (pp, dd, dp, pd, jd, jp, dj, pj, jj);
+        };
+    };
+}

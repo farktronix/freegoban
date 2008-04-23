@@ -1,0 +1,64 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                makeFirstMove = id; 
+                pass = id; 
+                redoMove = id; 
+                resign = id; 
+                runToolbarCustomizationPalette = id; 
+                showGameEnd = id; 
+                showGameStart = id; 
+                showHelp = id; 
+                showInfo = id; 
+                showLabels = id; 
+                showNextMove = id; 
+                showPreviousMove = id; 
+                showTerritory = id; 
+                showToolbar = id; 
+                testScore = id; 
+                toggleToolbarShown = id; 
+                undoMove = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = GoGridView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            ACTIONS = {newDocument = id; }; 
+            CLASS = GobanDocumentController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancel = id; ok = id; }; 
+            CLASS = GobanPreferenceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                blackKindPopup = id; 
+                blackTextField = id; 
+                boardSizeField = id; 
+                handicapField = id; 
+                komiField = id; 
+                rulesetPopup = id; 
+                whiteKindPopup = id; 
+                whiteTextField = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            CLASS = InfoPanelController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {orderFrontStandardAboutPanel = id; }; 
+            CLASS = NSApplication; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSResponder; 
+        }, 
+        {CLASS = STEController; LANGUAGE = ObjC; SUPERCLASS = NSDocumentController; }
+    ); 
+    IBVersion = 1; 
+}

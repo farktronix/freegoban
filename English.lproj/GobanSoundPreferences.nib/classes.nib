@@ -1,0 +1,42 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {apply = id; restoreDefaults = id; setProgramPath = id; }; 
+            CLASS = GobanPreferenceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                displayPanel = id; 
+                generalPanel = id; 
+                gnugoPanel = id; 
+                humanSoundSwitch = id; 
+                isAskingToSaveEditedGamesSwitch = id; 
+                isReusingWindowSwitch = id; 
+                isUsingFullAreaSwitch = id; 
+                playerTableView = id; 
+                programArgumentsField = id; 
+                programNameField = id; 
+                programPathField = id; 
+                programSoundSwitch = id; 
+                soundPanel = id; 
+                tabView = id; 
+                userPanel = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {apply = id; }; 
+            CLASS = GobanPreferences; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {view = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = GobanSoundPreferences; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {humanSoundSwitch = id; programSoundSwitch = id; }; 
+            SUPERCLASS = GobanPreferences; 
+        }
+    ); 
+    IBVersion = 1; 
+}

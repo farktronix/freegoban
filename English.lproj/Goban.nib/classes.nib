@@ -1,0 +1,54 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                pass = id; 
+                redoMove = id; 
+                resign = id; 
+                runToolbarCustomizationPalette = id; 
+                showGameEnd = id; 
+                showGameStart = id; 
+                showHelp = id; 
+                showInfo = id; 
+                showLabels = id; 
+                showNextMove = id; 
+                showPreviousMove = id; 
+                showTerritory = id; 
+                showToolbar = id; 
+                startOrResume = id; 
+                testScore = id; 
+                toggleToolbarShown = id; 
+                undoMove = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = GoGridView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            ACTIONS = {newDocument = id; showPreferences = id; }; 
+            CLASS = GobanApplicationDelegate; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = GobanPreferenceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {tabView = id; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            CLASS = InfoPanelController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {orderFrontStandardAboutPanel = id; }; 
+            CLASS = NSApplication; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSResponder; 
+        }, 
+        {CLASS = STEController; LANGUAGE = ObjC; SUPERCLASS = NSDocumentController; }
+    ); 
+    IBVersion = 1; 
+}

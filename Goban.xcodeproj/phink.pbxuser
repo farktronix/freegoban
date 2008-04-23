@@ -1,0 +1,137 @@
+// !$*UTF8*$!
+{
+	00E612B600DFDD3B7F000001 = {
+		activeArgIndex = 2147483647;
+		argumentStrings = (
+		);
+		debuggerPlugin = GDBDebugging;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		isa = PBXExecutable;
+		shlibInfoDictList = (
+		);
+		sourceDirectories = (
+		);
+	};
+	011B885800333007C0A80006 = {
+		activeExec = 0;
+	};
+	045C3D93006DFC677F000001 = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 239}, {750, 502}}";
+		};
+	};
+	2A37F4A9FDCFA73011CA2CEA = {
+		activeBuildStyle = 00EBEBD0006D37337F000001;
+		activeTarget = 2A37F4C6FDCFA73011CA2CEA;
+		addToTargets = (
+			2A37F4C6FDCFA73011CA2CEA,
+		);
+		breakpoints = (
+			F6FC053B0154090801000001,
+		);
+		perUserDictionary = {
+			PBXWorkspaceConfiguration = {
+				ContentSize = "{1115, 639}";
+				LeftSlideOut = {
+					ActiveTab = 0;
+					Frame = "{{0, 23}, {1115, 616}}";
+					Split0 = {
+						ActiveTab = 2;
+						Frame = "{{292, 0}, {823, 616}}";
+						Split0 = {
+							Frame = "{{0, 132}, {823, 484}}";
+						};
+						SplitCount = 1;
+						Tab0 = {
+							Debugger = {
+								ActiveTab = 1;
+								Frame = "{{0, 0}, {902, 429}}";
+								Split0 = {
+									Frame = "{{0, 148}, {902, 281}}";
+									Split0 = {
+										Frame = "{{0, 0}, {399, 281}}";
+									};
+									Split1 = {
+										Frame = "{{408, 0}, {494, 281}}";
+									};
+									SplitCount = 2;
+								};
+								SplitCount = 1;
+								Tab0 = {
+									Frame = "{{0, 0}, {813, 181}}";
+								};
+								Tab1 = {
+									Frame = "{{0, 0}, {902, 123}}";
+								};
+								TabCount = 2;
+							};
+							Frame = "{{0, 0}, {902, 429}}";
+							LauncherConfigVersion = 4;
+						};
+						Tab1 = {
+							Frame = "{{0, 0}, {890, 119}}";
+							LauncherConfigVersion = 3;
+							Runner = {
+								Frame = "{{0, 0}, {890, 119}}";
+							};
+						};
+						Tab2 = {
+							BuildMessageFrame = "{{0, 0}, {825, 61}}";
+							BuildTranscriptFrame = "{{0, 70}, {825, 39}}";
+							Frame = "{{0, 0}, {823, 107}}";
+						};
+						Tab3 = {
+							Frame = "{{0, 0}, {902, 280}}";
+						};
+						TabCount = 4;
+					};
+					SplitCount = 1;
+					Tab0 = {
+						Frame = "{{0, 0}, {267, 616}}";
+					};
+					Tab1 = {
+						ClassesFrame = "{{0, 0}, {274, 318}}";
+						Frame = "{{0, 0}, {272, 616}}";
+						MembersFrame = "{{0, 327}, {274, 289}}";
+						OptionsSetName = "Hierarchy, all classes";
+					};
+					Tab2 = {
+						Frame = "{{0, 0}, {200, 616}}";
+					};
+					Tab3 = {
+						Frame = "{{0, 0}, {200, 616}}";
+						Split0 = {
+							Frame = "{{0, 0}, {200, 299}}";
+						};
+						Split1 = {
+							Frame = "{{0, 308}, {200, 308}}";
+						};
+						SplitCount = 2;
+					};
+					Tab4 = {
+						Frame = "{{0, 0}, {250, 616}}";
+					};
+					TabCount = 5;
+				};
+			};
+		};
+		wantsIndex = 1;
+		wantsSCM = -1;
+	};
+	2A37F4C6FDCFA73011CA2CEA = {
+		activeExec = 0;
+		targetExecs = {
+			macosx = (
+				00E612B600DFDD3B7F000001,
+			);
+		};
+	};
+	F6FC053B0154090801000001 = {
+		isa = PBXSymbolicBreakpoint;
+		state = 1;
+		symbolName = "-[NSException raise]";
+	};
+}

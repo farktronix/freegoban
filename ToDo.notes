@@ -1,0 +1,150 @@
+To Do
+    v16
+        - Resume play (dispute) after end/scoring
+        - Scoring
+            - Interrupt
+            - Enable on saved games
+        - SGF 
+            - show saved score when available
+        - Bug: crash when changing player preference during game?
+        
+    v17
+        - Make Last move (game's end) undoable
+        - Game: fix Undo First move (two undo moves sent to players)
+        - Clock and time management
+        - IGS / NNGS
+        - Collection file
+            - File/Game/Edit menus?
+            - another drawer or window?
+        - Show non-move nodes
+
+    v?
+        - Network play
+        - Named rulesets (need GTP v2)
+            - handicap fixed/free
+            - counting area/territory
+            - ko rule
+            - suicide
+        - Architecture
+            - Players and Inspectors from bundles
+            - Use SenBundleLibrarian
+        - Preferences
+            - To be made more Apple like
+            - Sound: include speech synthesis?
+            - Speech recognition
+        - Speech synthesis
+            - Atari
+                + needs atari detection
+            - Moves
+        - Speech recognition
+            Speech    Result
+            "J"	      J row highlighted
+            "K"       K row highlighted
+            "12"      K12 point highlighted
+            "OK"      move played.
+        - Board
+            - clean up display / stone code
+            - add markup symbols (square, triangle, "a"...)
+            ? pulse last stone
+            ? ghost captured when showing territory
+        - Inspectors
+            - General? inspector
+                - Game info (comments)
+            - Move inspector
+                ? Show annotations
+                ? Edit annotations
+                - Show branches
+        - Help
+            - structure
+            - contextual help
+        - Problem mode?
+        - Setup mode?
+            - Place stones, symbols on board (tool palette?)
+        - Print
+
+History
+    v15 (November 10, 2001)
+        + gnugo 3.1.11
+        + Accept unknown SGF identifiers
+        + Prebind frameworks
+        
+    v14 (October 15, 2001)
+        + Save Preference panel frame
+        + SGF 
+            + Corrected score string
+            + Corrected flipped y coordinate
+            + Corrected SGF handicap stones
+        + Bug: hangs when replaying a game with two players with same name
+        + gnugo 3.1.9
+
+    v13 (October 3, 2001)
+        + Corrected preference bug (Goban unusable in some cases).
+
+    v12 (October 2, 2001)
+        + Resume play after loading file
+        ~ Progress indicator prototype
+        + Move inspector
+            + Show main variation
+            > (v?) Show branches
+            + Show comments
+            + Edit comments
+            > (v?) Show/Edit annotations
+            + Add SGF Node, ...
+        + Preference panel
+            + Add preference for not saving when closing edited games.
+            + General
+            + Display
+            + Sound
+            + Players
+                + GMP generic player
+                + GTP generic player
+                + GNU Go player            
+        + Game: Remove last 2 pass moves from list and file
+        + Board: fix resizing behavior
+            + Added standard frame
+        + Board: show/hide coordinates labels
+        + GTP
+            + play
+            + score
+            > (gtp v2) handicap > 9 ?
+        + Gnugo 3.x
+        + Clean up Player management
+            + Player names in Rules inspector
+        + SGF
+            + Synchronize players names with inspector
+            + Store result
+
+    v11 (August 24, 2001)
+        + Corrected bug in automatic scoring (crash when scoring process dies)
+
+    v10 (June 22, 2001)
+        + linewidth now proportional to stones.
+        + Automatic Scoring
+        + Bundled with gnugo 2.7.243
+        > (v12) Move inspector
+            - Show branches, comments...
+            - add SGF Node, ...
+        + GoGame
+            + notifications: rulesDidChange, positionDidChange
+        + Bug Fix
+            + size of large stones with markup
+            + territory points not perturbed
+            + stone cut on board sides
+
+    v9 (June 15, 2001)
+        + Window resizing
+        + New, ray traced, stones, board, and icon (with Guy Moreillon)
+        + Replaced Inspector with Drawer
+        + New About box
+        ~ Started Help
+        
+    v8 (May 26, 2001)
+        + Separated SenFoundation target
+        + Optimized grid drawing
+        
+    v7 (May 18, 2001)
+        + Fixed Undo bug / Pass move representation
+        + Removed Preferences buttons, all changes are immediate 
+        + Added Toolbar validation
+        + Replaced Alert windows with sheets
+        

@@ -1,0 +1,66 @@
+<PRE>
+GNU Go Version 3.1.8
+
+Usage: gnugo [-opts]
+
+Main Options:
+       --mode <mode>     Force the playing mode ('ascii', 'gmp', or 'gtp').
+                         Default is ASCII.
+                         If no terminal is detected GMP (Go Modem Protocol)
+                         will be assumed.
+       --quiet           Don't print copyright and informational messages
+       --gtp-input <file>Read gtp commands from file instead of stdin
+   -l, --infile <file>   Load name sgf file
+   -L, --until <move>    Stop loading just before move is played. <move>
+                         can be the move number or location (eg L10).
+   -o, --outfile <file>  Write sgf output to file
+   --printsgf <file>     Write position as a diagram to file (use with -l)
+
+Options that affect strength (higher = stronger, slower):
+   -D, --depth <depth>          deep reading cutoff (default 16)
+   -B, --backfill-depth <depth> deep reading cutoff (default 12)
+   -F, --fourlib-depth <depth>  deep reading cutoff (default 7)
+   -K, --ko-depth <depth>       deep reading cutoff (default 8)
+   --branch-depth <depth>       deep reading cutoff (default 13)
+   --backfill2-depth <depth>    deep reading cutoff (default 5)
+   --superstring-depth <depth>  deep reading cutoff (default 7)
+   --aa-depth <depth>           deep reading cutoff (default 6)
+   --owl-distrust <depth>       owl distrust depth (default 6)
+   --owl-branch <depth>         owl branching depth (default 8)
+   --owl-reading <depth>        owl reading depth (default 20)
+   --owl-node-limit <limit>     max nodes for owl reading (default 1000)
+   --level <amount>             strength (default 10, up to 10 supported)
+   --autolevel                  adapt gnugo level during game to respect
+                                the time specified by --clock <sec>.
+
+Experimental options:
+   --life                  use life code
+   --life-eyesize <n>      use life code, life_eyesize=n (default 10)
+   --nofusekidb            turn off fuseki database
+   --nojosekidb            turn off joseki database
+Scoring:
+   --score last            estimate score at last move in SGF file
+   --score until <n>       score at move 'n' in SGF file
+   --score end             generate moves to finish game, then score
+   --score aftermath       generate moves to finish, use best algorithm
+   --score aftermath --capture-all-dead --chinese rules   Tromp-Taylor score
+
+Cache size (higher=more memory usage, faster unless swapping occurs):
+   -M, --cache-size <megabytes>  RAM cache for hashing (default 16.0 Mb)
+
+Game Options: (--mode ascii)
+       --boardsize num   Set the board size to use (3--19)
+       --color <color>   Choose your color ('black' or 'white')
+       --handicap <num>  Set the number of handicap stones (0--9)
+       --komi <num>      Set the komi
+       --clock <sec>     Initialize the timer.
+       --byo-time <sec>  Initialize the byo-yomi timer.
+       --byo-period <stones>  Initialize the byo-yomi period.
+
+
+Informative Output:
+   -v, --version         Display the version of GNU Go
+   -h, --help            Display this help message
+       --help debug      Display help about debugging options
+       --copyright       Display copyright notice
+</PRE>

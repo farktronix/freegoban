@@ -1,0 +1,18 @@
+PreferencePanels = (
+    {
+        "identifier" = "General";
+        "class" = "GobanGeneralPreferences";
+    },
+    {
+        "identifier" = "Display";
+        "class" = "GobanDisplayPreferences";
+    },
+    {
+        "identifier" = "Sound";
+        "class" = "GobanSoundPreferences";
+    },
+    {
+        "identifier" = "Players";
+        "class" = "GobanPlayersPreferences";
+    },
+);

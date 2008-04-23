@@ -1,0 +1,56 @@
+/* B & W */
+"Black" = "Black";
+"White" = "White";
+
+/* Toggle menus */
+"Hide Territories" = "Hide Territories";
+"Show Territories" = "Show Territories";
+"Hide Info" = "Hide Info";
+"Show Info" = "Show Info";
+"Hide Labels" = "Hide Labels";
+"Show Labels" = "Show Labels";
+
+/* Actions */
+"OK" = "OK";
+"Cancel" = "Cancel";
+
+/* Resign Alert */
+"Resign" = "Resign";
+"Do you really want to resign this game?" = "Do you really want to resign this game?";
+
+
+/* First Move sheet */
+"First Move" = "First Move";
+"Make First Move" = "Make First Move";
+"Not your turn to make first move" = "It is not your turn to start the game. Should I make the first move?";
+
+/* No Komi */
+"none" = "none";
+
+/* Game moves */
+"pass" = "pass";
+
+/* Score Inspector */
+"Scoring in progress" = "Scoring in progress";
+"Game in progress" = "Game in progress";
+"Game not started" = "Game not started";
+"White wins by %.1f" = "White wins by %.1f";
+"Black wins by %.1f" = "Black wins by %.1f";
+"B+R" = "Black wins by resignation";
+"W+R" = "White wins by resignation";
+"Tie game" = "Tie game";
+"%@'s turn" = "%@'s turn";
+
+/* Exceptions */
+"Illegal Move" = "Illegal Move";
+
+/* Toolbar Items */
+"Play" = "Play";
+"Pass" = "Pass";
+"Undo" = "Undo";
+/* "Resign" = "Resign"; see above */
+"Info" = "Info";
+"Begin" = "Begin";
+"End" = "End";
+"Next" = "Next";
+"Previous" = "Previous";

@@ -1,0 +1,55 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {makeFirstMove = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = GobanInspectorController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {selectMove = id; }; 
+            CLASS = GobanMoveInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {commentView = id; outlineView = id; view = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                makeFirstMove = id; 
+                setBoardSize = id; 
+                setHandicap = id; 
+                setKomi = id; 
+                setOpponent = id; 
+                setRuleset = id; 
+            }; 
+            CLASS = GobanRulesInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                blackPopUp = id; 
+                boardSizeSlider = id; 
+                customKomiField = id; 
+                handicapField = id; 
+                handicapStepper = id; 
+                playButton = id; 
+                rulesetPopUp = id; 
+                standardKomiMatrix = id; 
+                view = id; 
+                whitePopUp = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = TabViewWorkaroundOutlineView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSOutlineView; 
+        }, 
+        {CLASS = TabViewWorkaroundTextView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }
+    ); 
+    IBVersion = 1; 
+}

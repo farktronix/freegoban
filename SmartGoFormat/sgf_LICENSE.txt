@@ -1,0 +1,38 @@
+				* * *
+
+			    L I C E N S E
+
+This license covers the source code and the related files that are
+distributed with this license. Let us call this collection the
+SOFTWARE.
+
+1. You can use the SOFTWARE to whatever purpose you want.  You can
+   include it in any other software product, including even commercial
+   ones.
+
+2. You can also redistribute the SOFTWARE or its parts freely, however
+   with the following restrictions.
+
+   1. If you make a useful modification to the SOFTWARE that could be
+      valuable to the general public you should consider offering the
+      modification to the original author to be included in a possible
+      subsequent release.
+
+   2. As long as the changes you have made are not "substantial" you
+      should retain the copyright notice of the original authors when
+      redistributing a modified version of the SOFTWARE.
+
+   3. You should in general respect this work of your fellow-coders
+      and not misuse it nor the authors' willingness to put their work
+      out.
+
+   4. You can also put the SOFTWARE under the GPL and distributed
+      under GPL if you wish.  The same goes for other restrictive
+      licenses. However, if you redistribute the SOFTWARE with
+      different licensing terms from these, you MUST include in the
+      distribution information about where the original SOFTWARE can
+      be obtained, if you have that information.
+
+   5. If you feel bad about these terms, contact the author.
+
+				* * *

@@ -1,0 +1,32 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = GobanInspectorController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {showTerritory = id; }; 
+            CLASS = GobanScoreInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                blackCapturedCountField = id; 
+                blackScoreField = id; 
+                blackSurroundedCountField = id; 
+                blackTerritoryCountField = id; 
+                resultField = id; 
+                showTerritoryButton = id; 
+                view = id; 
+                whiteCapturedCountField = id; 
+                whiteKomi = id; 
+                whiteScoreField = id; 
+                whiteSurroundedCountField = id; 
+                whiteTerritoryCountField = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

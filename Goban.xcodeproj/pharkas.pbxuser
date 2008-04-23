@@ -1,0 +1,86 @@
+// !$*UTF8*$!
+{
+	011B885800333007C0A80006 /* GoGame */ = {
+		activeExec = 0;
+	};
+	2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Development;
+		activeBuildStyle = 00EBEBD0006D37337F000001 /* Development */;
+		activeExecutable = 43CD7B870DBFCD7D00644FF2 /* Goban */;
+		activeTarget = 2A37F4C6FDCFA73011CA2CEA /* Goban */;
+		codeSenseManager = 43CD7D380DBFCD8300644FF2 /* Code sense */;
+		executables = (
+			43CD7B870DBFCD7D00644FF2 /* Goban */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48.1626,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 230673789;
+			PBXWorkspaceStateSaveDate = 230673789;
+		};
+		sourceControlManager = 43CD7D370DBFCD8300644FF2 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	2A37F4C6FDCFA73011CA2CEA /* Goban */ = {
+		activeExec = 0;
+		executables = (
+			43CD7B870DBFCD7D00644FF2 /* Goban */,
+		);
+	};
+	43CD7B870DBFCD7D00644FF2 /* Goban */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Goban;
+		sourceDirectories = (
+		);
+	};
+	43CD7D370DBFCD8300644FF2 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	43CD7D380DBFCD8300644FF2 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}

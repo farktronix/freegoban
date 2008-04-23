@@ -1,0 +1,14 @@
+InspectorPanels = (
+    {
+        "identifier" = "Rules";
+        "class" = "GobanRulesInspector";
+    },
+    {
+        "identifier" = "Moves";
+        "class" = "GobanMoveInspector";
+    },
+    {
+        "identifier" = "Score";
+        "class" = "GobanScoreInspector";
+    },
+);

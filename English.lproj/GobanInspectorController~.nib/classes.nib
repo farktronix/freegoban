@@ -1,0 +1,77 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = GobanInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                document = id; 
+                drawer = id; 
+                holderView = id; 
+                moveInspector = id; 
+                popUp = id; 
+                rulesInspector = id; 
+                scoreInspector = id; 
+                tabView = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = GobanInspectorController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {popUp = id; rulesInspector = id; scoreInspector = id; tabView = id; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            CLASS = GobanMoveInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {view = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                play = id; 
+                setBoardSize = id; 
+                setHandicap = id; 
+                setKomi = id; 
+                setRuleset = id; 
+            }; 
+            CLASS = GobanRulesInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                blackKindControl = id; 
+                blackName = id; 
+                boardSizeControl = id; 
+                handicapControl = id; 
+                komiControl = id; 
+                playControl = id; 
+                rulesetControl = id; 
+                view = id; 
+                whiteKindControl = id; 
+                whiteName = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {showTerritory = id; }; 
+            CLASS = GobanScoreInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                blackCapturedCountField = id; 
+                blackScoreField = id; 
+                blackSurroundedCountField = id; 
+                blackTerritoryCountField = id; 
+                resultField = id; 
+                showTerritoryButton = id; 
+                view = id; 
+                whiteCapturedCountField = id; 
+                whiteKomi = id; 
+                whiteScoreField = id; 
+                whiteSurroundedCountField = id; 
+                whiteTerritoryCountField = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
