@@ -6,310 +6,188 @@
 	objectVersion = 42;
 	objects = {
 
-/* Begin PBXApplicationTarget section */
-		2A37F4C6FDCFA73011CA2CEA /* Goban */ = {
-			isa = PBXApplicationTarget;
-			buildConfigurationList = 43CD7D2F0DBFCD8300644FF2 /* Build configuration list for PBXApplicationTarget "Goban" */;
-			buildPhases = (
-				2A37F4C7FDCFA73011CA2CEA /* Headers */,
-				2A37F4C9FDCFA73011CA2CEA /* Resources */,
-				2A37F4CEFDCFA73011CA2CEA /* Sources */,
-				2A37F4D1FDCFA73011CA2CEA /* Frameworks */,
-				043355CEFE303625C02AAC07 /* Rez */,
-				07D26841008129697F000001 /* CopyFiles */,
-			);
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "\"$(LOCAL_LIBRARY_DIR)/Frameworks\"";
-				HEADER_SEARCH_PATHS = "";
-				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				OPTIMIZATION_CFLAGS = "-O3";
-				PRODUCT_NAME = Goban;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = app;
-			};
-			dependencies = (
-				011B885700333007C0A80006 /* PBXTargetDependency */,
-			);
-			name = Goban;
-			productInstallPath = "$(HOME)/Applications";
-			productName = Goban;
-			productReference = 1758732AFF379DA111CA2CBB /* Goban.app */;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
-<plist version=\"1.0\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleDocumentTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeExtensions</key>
-			<array>
-				<string>sgf</string>
-			</array>
-			<key>CFBundleTypeIconFile</key>
-			<string>sgf</string>
-			<key>CFBundleTypeName</key>
-			<string>SmartGoFormat</string>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>NSDocumentClass</key>
-			<string>GobanGameDocument</string>
-		</dict>
-	</array>
-	<key>CFBundleExecutable</key>
-	<string>Goban</string>
-	<key>CFBundleGetInfoString</key>
-	<string>Sen:te Goban (v15)</string>
-	<key>CFBundleHelpBookFolder</key>
-	<string>GobanHelp</string>
-	<key>CFBundleHelpBookName</key>
-	<string>Goban Help</string>
-	<key>CFBundleIconFile</key>
-	<string>Goban.icns</string>
-	<key>CFBundleIdentifier</key>
-	<string>ch.sente.Goban</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>Goban</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>v15</string>
-	<key>CFBundleSignature</key>
-	<string></string>
-	<key>CFBundleVersion</key>
-	<string>v15</string>
-	<key>NSHelpFile</key>
-	<string>GobanHelp/index.html</string>
-	<key>NSMainNibFile</key>
-	<string>Goban</string>
-	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
-</dict>
-</plist>
-";
-		};
-/* End PBXApplicationTarget section */
-
 /* Begin PBXBuildFile section */
-		00ED9B8B00825ED47F000001 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00ED9B8A00825ED47F000001 /* Localizable.strings */; };
-		00F1B186008520247F000001 /* GobanApplicationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F1B184008520247F000001 /* GobanApplicationDelegate.h */; };
-		00F1B187008520247F000001 /* GobanApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F1B185008520247F000001 /* GobanApplicationDelegate.m */; };
-		00F1B189008523C07F000001 /* Tink.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 00F1B188008523C07F000001 /* Tink.aiff */; };
-		0115B0D300D941AF7F000001 /* GobanCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0115B0D100D941AF7F000001 /* GobanCell.h */; };
-		0115B0D400D941AF7F000001 /* GobanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0115B0D200D941AF7F000001 /* GobanCell.m */; };
-		0115B0DC00D96A987F000001 /* BlackStones in Resources */ = {isa = PBXBuildFile; fileRef = 0115B0DA00D96A987F000001 /* BlackStones */; };
-		0115B0DD00D96A987F000001 /* WhiteStones in Resources */ = {isa = PBXBuildFile; fileRef = 0115B0DB00D96A987F000001 /* WhiteStones */; };
-		011B8813003322FCC0A80006 /* GobanGameDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B8806003322FCC0A80006 /* GobanGameDocument.h */; };
-		011B8814003322FCC0A80006 /* GobanGMPPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B8808003322FCC0A80006 /* GobanGMPPlayer.h */; };
-		011B8816003322FCC0A80006 /* GobanHumanPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B880C003322FCC0A80006 /* GobanHumanPlayer.h */; };
-		011B8817003322FCC0A80006 /* GobanPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B880E003322FCC0A80006 /* GobanPlayer.h */; };
-		011B8818003322FCC0A80006 /* GobanPreferenceController.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B8810003322FCC0A80006 /* GobanPreferenceController.h */; };
-		011B881A003322FCC0A80006 /* GobanGMPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B8809003322FCC0A80006 /* GobanGMPPlayer.m */; settings = {ATTRIBUTES = (); }; };
-		011B881C003322FCC0A80006 /* GobanHumanPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B880D003322FCC0A80006 /* GobanHumanPlayer.m */; settings = {ATTRIBUTES = (); }; };
-		011B881D003322FCC0A80006 /* GobanPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B880F003322FCC0A80006 /* GobanPlayer.m */; settings = {ATTRIBUTES = (); }; };
-		011B881E003322FCC0A80006 /* GobanPreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B8811003322FCC0A80006 /* GobanPreferenceController.m */; settings = {ATTRIBUTES = (); }; };
-		011B881F003322FCC0A80006 /* Goban_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B8812003322FCC0A80006 /* Goban_main.m */; settings = {ATTRIBUTES = (); }; };
-		011B883E00332332C0A80006 /* Opponents.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 011B882B00332332C0A80006 /* Opponents.tiff */; };
-		011B8851003323B1C0A80006 /* Goban.nib in Resources */ = {isa = PBXBuildFile; fileRef = 011B8846003323B1C0A80006 /* Goban.nib */; };
-		011B8852003323B1C0A80006 /* GobanGameDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 011B8849003323B1C0A80006 /* GobanGameDocument.nib */; };
-		011B8853003323B1C0A80006 /* GobanPreferenceController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 011B884B003323B1C0A80006 /* GobanPreferenceController.nib */; };
-		011B8855003323B1C0A80006 /* InfoPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 011B884F003323B1C0A80006 /* InfoPanel.nib */; };
-		011B886200333379C0A80006 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
-		011B886300333379C0A80006 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */; };
-		011B88770033343DC0A80006 /* GoGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B88660033343DC0A80006 /* GoGame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		011B88780033343DC0A80006 /* GoGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B88690033343DC0A80006 /* GoGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		011B887A0033343DC0A80006 /* GoPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B886D0033343DC0A80006 /* GoPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		011B887B0033343DC0A80006 /* GoPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B886F0033343DC0A80006 /* GoPosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		011B887C0033343DC0A80006 /* GoPositionPointEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B88710033343DC0A80006 /* GoPositionPointEnumerator.h */; settings = {ATTRIBUTES = (); }; };
-		011B887D0033343DC0A80006 /* GoRuleSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B88730033343DC0A80006 /* GoRuleSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		011B887E0033343DC0A80006 /* GoSymbol.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B88750033343DC0A80006 /* GoSymbol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		011B887F0033343DC0A80006 /* GoGameDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 011B88680033343DC0A80006 /* GoGameDefaults.plist */; };
-		011B88800033343DC0A80006 /* GoGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B88670033343DC0A80006 /* GoGame.m */; settings = {ATTRIBUTES = (); }; };
-		011B88810033343DC0A80006 /* GoGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B886A0033343DC0A80006 /* GoGeometry.m */; settings = {ATTRIBUTES = (); }; };
-		011B88830033343DC0A80006 /* GoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B886E0033343DC0A80006 /* GoPoint.m */; settings = {ATTRIBUTES = (); }; };
-		011B88840033343DC0A80006 /* GoPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B88700033343DC0A80006 /* GoPosition.m */; settings = {ATTRIBUTES = (); }; };
-		011B88850033343DC0A80006 /* GoPositionPointEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B88720033343DC0A80006 /* GoPositionPointEnumerator.m */; settings = {ATTRIBUTES = (); }; };
-		011B88860033343DC0A80006 /* GoRuleSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B88740033343DC0A80006 /* GoRuleSet.m */; settings = {ATTRIBUTES = (); }; };
-		011B88870033343DC0A80006 /* GoSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B88760033343DC0A80006 /* GoSymbol.m */; settings = {ATTRIBUTES = (); }; };
-		011B889100333974C0A80006 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011B888B0033358FC0A80006 /* Foundation.framework */; };
-		018CE32100D1A9D67F000001 /* KayaBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 0109709400D04A387F000001 /* KayaBoard.png */; };
-		018CE32400D2B3FA7F000001 /* GobanGoke.h in Headers */ = {isa = PBXBuildFile; fileRef = 018CE32200D2B3FA7F000001 /* GobanGoke.h */; };
-		018CE32500D2B3FA7F000001 /* GobanGoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 018CE32300D2B3FA7F000001 /* GobanGoke.m */; };
-		044A809E00CDB7D47F000001 /* GobanBoardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 044A809C00CDB7D47F000001 /* GobanBoardView.h */; };
-		044A809F00CDB7D47F000001 /* GobanBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A809D00CDB7D47F000001 /* GobanBoardView.m */; };
-		045C3D8D006D3D487F000001 /* GobanView.h in Headers */ = {isa = PBXBuildFile; fileRef = 045C3D8B006D3D487F000001 /* GobanView.h */; };
-		045C3D8E006D3D487F000001 /* GobanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045C3D8C006D3D487F000001 /* GobanView.m */; };
-		045C3D94006DFC677F000001 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045C3D93006DFC677F000001 /* Defaults.plist */; };
-		045C3D95006E21E97F000001 /* GobanGameDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B8807003322FCC0A80006 /* GobanGameDocument.m */; };
-		045C3D9D006E9ED87F000001 /* GobanScoreInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 045C3D99006E9ED87F000001 /* GobanScoreInspector.nib */; };
-		045C3D9E006E9ED87F000001 /* GobanRulesInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 045C3D9B006E9ED87F000001 /* GobanRulesInspector.nib */; };
-		045C3DA1006E9FF27F000001 /* GobanRulesInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 045C3D9F006E9FF27F000001 /* GobanRulesInspector.h */; };
-		045C3DA2006E9FF27F000001 /* GobanRulesInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 045C3DA0006E9FF27F000001 /* GobanRulesInspector.m */; };
-		053CBFC300333F6FC0A80006 /* GobanMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 053CBFC100333F6FC0A80006 /* GobanMatrix.h */; };
-		053CBFC400333F6FC0A80006 /* GobanMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 053CBFC200333F6FC0A80006 /* GobanMatrix.m */; settings = {ATTRIBUTES = (); }; };
-		053CBFC800333FFFC0A80006 /* gmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 053CBFC700333FFFC0A80006 /* gmp.h */; };
-		053CBFC900333FFFC0A80006 /* gmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 053CBFC600333FFFC0A80006 /* gmp.c */; settings = {ATTRIBUTES = (); }; };
-		053CBFCD003342BEC0A80006 /* InfoPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 053CBFCB003342BEC0A80006 /* InfoPanelController.h */; };
-		053CBFCE003342BEC0A80006 /* InfoPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053CBFCC003342BEC0A80006 /* InfoPanelController.m */; settings = {ATTRIBUTES = (); }; };
-		053CBFD1003342D8C0A80006 /* Goban.icns in Resources */ = {isa = PBXBuildFile; fileRef = 053CBFCF003342D8C0A80006 /* Goban.icns */; };
-		053CBFD2003342D8C0A80006 /* sgf.icns in Resources */ = {isa = PBXBuildFile; fileRef = 053CBFD0003342D8C0A80006 /* sgf.icns */; };
-		07D2684700812D187F000001 /* GoGame.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 011B885600333007C0A80006 /* GoGame.framework */; };
-		0A0DA89D00335300C0A80006 /* gnugo in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA89C00335300C0A80006 /* gnugo */; };
-		0D8DD65600EF20067F000001 /* sgf.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D8DD65500EF20067F000001 /* sgf.h */; };
-		0D8DD65700EF20067F000001 /* sgf.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DD65400EF20067F000001 /* sgf.c */; };
-		1543F67A00DD003A7F000001 /* GobanMoveInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1543F67800DD003A7F000001 /* GobanMoveInspector.nib */; };
-		1543F67D00DD31237F000001 /* GobanMoveInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 1543F67B00DD31237F000001 /* GobanMoveInspector.h */; };
-		1543F67E00DD31237F000001 /* GobanMoveInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1543F67C00DD31237F000001 /* GobanMoveInspector.m */; };
-		1543F68400DD60C07F000001 /* GobanGeneralInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1543F68200DD60C07F000001 /* GobanGeneralInspector.nib */; };
-		1543F68700DD61B57F000001 /* GobanCopyrightInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1543F68500DD61B57F000001 /* GobanCopyrightInspector.nib */; };
-		1543F68A00DD643B7F000001 /* GobanContextInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1543F68800DD643B7F000001 /* GobanContextInspector.nib */; };
-		155CF8D600D433EA7F000001 /* BlackTerritory.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8D300D433EA7F000001 /* BlackTerritory.tiff */; };
-		155CF8D700D433EA7F000001 /* Dame.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8D400D433EA7F000001 /* Dame.tiff */; };
-		155CF8D800D433EA7F000001 /* WhiteTerritory.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8D500D433EA7F000001 /* WhiteTerritory.tiff */; };
-		155CF8DA00D434037F000001 /* BlackStone.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8D900D434037F000001 /* BlackStone.tiff */; };
-		155CF8E000D4341A7F000001 /* WhiteStone.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8DE00D4341A7F000001 /* WhiteStone.tiff */; };
-		155CF8E300D436127F000001 /* BlackPrisonerCaption.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8E100D436127F000001 /* BlackPrisonerCaption.tiff */; };
-		155CF8E400D436127F000001 /* WhitePrisonerCaption.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8E200D436127F000001 /* WhitePrisonerCaption.tiff */; };
-		172B40790083B18F7F000001 /* Tock.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 172B40780083B18F7F000001 /* Tock.aiff */; };
-		2C9A069B007FC95E7F000001 /* GobanScoreInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9A0699007FC95E7F000001 /* GobanScoreInspector.h */; };
-		2C9A069C007FC95E7F000001 /* GobanScoreInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A069A007FC95E7F000001 /* GobanScoreInspector.m */; };
-		44AF327500D43FA97F000001 /* sparrows.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 44AF327400D43FA97F000001 /* sparrows.tiff */; };
-		44AF327600D445487F000001 /* SenFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64E01A700BC8B7201000001 /* SenFoundation.framework */; };
-		664D73F5008081A27F000001 /* Info.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 664D73F0008081A27F000001 /* Info.tiff */; };
-		664D73F6008081A27F000001 /* Pass.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 664D73F1008081A27F000001 /* Pass.tiff */; };
-		664D73F7008081A27F000001 /* Play.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 664D73F2008081A27F000001 /* Play.tiff */; };
-		664D73F8008081A27F000001 /* Resign.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 664D73F3008081A27F000001 /* Resign.tiff */; };
-		664D73F9008081A27F000001 /* Undo.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 664D73F4008081A27F000001 /* Undo.tiff */; };
-		664D73FC00808C7C7F000001 /* GobanToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 664D73FA00808C7C7F000001 /* GobanToolbar.h */; };
-		664D73FD00808C7C7F000001 /* GobanToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 664D73FB00808C7C7F000001 /* GobanToolbar.m */; };
-		F61272F500CA541401000001 /* SenInterfaceValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = F61272F300CA541401000001 /* SenInterfaceValidation.h */; };
-		F61272F600CA541401000001 /* SenInterfaceValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = F61272F400CA541401000001 /* SenInterfaceValidation.m */; };
-		F61573C401692CDD01302650 /* GobanProgressItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F61573C201692CDD01302650 /* GobanProgressItem.h */; };
-		F61573C501692CDD01302650 /* GobanProgressItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F61573C301692CDD01302650 /* GobanProgressItem.m */; };
-		F622570900C8E30C01000001 /* GobanInspectorController.h in Headers */ = {isa = PBXBuildFile; fileRef = F622570700C8E30C01000001 /* GobanInspectorController.h */; };
-		F622570A00C8E30C01000001 /* GobanInspectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F622570800C8E30C01000001 /* GobanInspectorController.m */; };
-		F6272842016A553B0149DA90 /* SenFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F64E01A700BC8B7201000001 /* SenFoundation.framework */; };
-		F62D3786015E0B4E01000001 /* GobanGTPPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D3784015E0B4E01000001 /* GobanGTPPlayer.h */; };
-		F62D3787015E0B4E01000001 /* GobanGTPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D3785015E0B4E01000001 /* GobanGTPPlayer.m */; };
-		F634A44D014D53E701000001 /* GoGameTree.h in Headers */ = {isa = PBXBuildFile; fileRef = F634A44B014D53E701000001 /* GoGameTree.h */; };
-		F634A44E014D53E701000001 /* GoGameTree.m in Sources */ = {isa = PBXBuildFile; fileRef = F634A44C014D53E701000001 /* GoGameTree.m */; };
-		F6381FEE016104EF01000001 /* GobanGnuGoPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F6381FEC016104EF01000001 /* GobanGnuGoPlayer.h */; };
-		F6381FEF016104EF01000001 /* GobanGnuGoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6381FED016104EF01000001 /* GobanGnuGoPlayer.m */; };
-		F6381FFB0161110401000001 /* GobanGeneralPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F6381FF90161110401000001 /* GobanGeneralPreferences.h */; };
-		F6381FFC0161110401000001 /* GobanGeneralPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F6381FFA0161110401000001 /* GobanGeneralPreferences.m */; };
-		F6381FFF016111A701000001 /* GobanPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F6381FFD016111A701000001 /* GobanPreferences.h */; };
-		F6382000016111A701000001 /* GobanPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F6381FFE016111A701000001 /* GobanPreferences.m */; };
-		F6382003016115B701000001 /* GobanGeneralPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = F6382001016115B701000001 /* GobanGeneralPreferences.nib */; };
-		F63820100161170801000001 /* GobanSoundPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F638200C0161170801000001 /* GobanSoundPreferences.h */; };
-		F63820110161170801000001 /* GobanPlayersPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F63820080161170801000001 /* GobanPlayersPreferences.h */; };
-		F63820120161170801000001 /* GobanDisplayPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F63820040161170801000001 /* GobanDisplayPreferences.h */; };
-		F63820130161170801000001 /* GobanDisplayPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = F63820060161170801000001 /* GobanDisplayPreferences.nib */; };
-		F63820140161170801000001 /* GobanPlayersPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = F638200A0161170801000001 /* GobanPlayersPreferences.nib */; };
-		F63820150161170801000001 /* GobanSoundPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = F638200E0161170801000001 /* GobanSoundPreferences.nib */; };
-		F63820160161170801000001 /* GobanSoundPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F638200D0161170801000001 /* GobanSoundPreferences.m */; };
-		F63820170161170801000001 /* GobanPlayersPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F63820090161170801000001 /* GobanPlayersPreferences.m */; };
-		F63820180161170801000001 /* GobanDisplayPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F63820050161170801000001 /* GobanDisplayPreferences.m */; };
-		F638953E016500DE01BA2653 /* GobanPlayerDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = F638953C016500DD01BA2653 /* GobanPlayerDefaults.h */; };
-		F638953F016500DE01BA2653 /* GobanPlayerDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = F638953D016500DD01BA2653 /* GobanPlayerDefaults.m */; };
-		F639E67F015BC8B201000001 /* GobanInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = F639E67E015BC8B201000001 /* GobanInspector.h */; };
-		F63BD097015EAAAE01000001 /* GobanProgramPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F63BD095015EAAAE01000001 /* GobanProgramPlayer.h */; };
-		F63BD098015EAAAE01000001 /* GobanProgramPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F63BD096015EAAAE01000001 /* GobanProgramPlayer.m */; };
-		F6423723014BD0D101000001 /* GoGameNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F6423721014BD0D101000001 /* GoGameNode.h */; };
-		F6423724014BD0D101000001 /* GoGameNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F6423722014BD0D101000001 /* GoGameNode.m */; };
-		F642372F014C226101000001 /* GoMove.h in Headers */ = {isa = PBXBuildFile; fileRef = F642372D014C226101000001 /* GoMove.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6423730014C226101000001 /* GoMove.m in Sources */ = {isa = PBXBuildFile; fileRef = F642372E014C226101000001 /* GoMove.m */; };
-		F64E01A900BC8B7201000001 /* SenFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64E01A600BC8B7201000001 /* SenFoundation.framework */; };
-		F656EED6016BCCC7011CF5BC /* General.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F656EED1016BCCC7011CF5BC /* General.tiff */; };
-		F656EED7016BCCC7011CF5BC /* Display.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F656EED2016BCCC7011CF5BC /* Display.tiff */; };
-		F656EED8016BCCC7011CF5BC /* Sound.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F656EED3016BCCC7011CF5BC /* Sound.tiff */; };
-		F656EED9016BCCC7011CF5BC /* Speech.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F656EED4016BCCC7011CF5BC /* Speech.tiff */; };
-		F656EEDA016BCCC7011CF5BC /* Players.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F656EED5016BCCC7011CF5BC /* Players.tiff */; };
-		F667BF5D00BCE4C001000001 /* GoGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011B885600333007C0A80006 /* GoGame.framework */; };
-		F667BF5E00BCE4C001000001 /* SenFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F64E01A600BC8B7201000001 /* SenFoundation.framework */; };
-		F66AAE4E00DA6C2801000001 /* SenteGoban.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F66AAE4D00DA6C2801000001 /* SenteGoban.tiff */; };
-		F6A4905100C18C9701000001 /* GobanHelp in Resources */ = {isa = PBXBuildFile; fileRef = F6A4905000C18C9701000001 /* GobanHelp */; };
-		F6B2DADD0166615B01A37789 /* GobanUser.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B2DADB0166615B01A37789 /* GobanUser.h */; };
-		F6B2DADE0166615B01A37789 /* GobanUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B2DADC0166615B01A37789 /* GobanUser.m */; };
-		F6B2DAE7016664E601A37789 /* GobanGnuGoPlayerEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B2DAE5016664E601A37789 /* GobanGnuGoPlayerEditor.h */; };
-		F6B2DAE8016664E601A37789 /* GobanGnuGoPlayerEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B2DAE6016664E601A37789 /* GobanGnuGoPlayerEditor.m */; };
-		F6B2DAED0166658601A37789 /* GobanGnuGoPlayerEditor.nib in Resources */ = {isa = PBXBuildFile; fileRef = F6B2DAE90166658601A37789 /* GobanGnuGoPlayerEditor.nib */; };
-		F6B2DAEE0166658601A37789 /* GobanProgramPlayerEditor.nib in Resources */ = {isa = PBXBuildFile; fileRef = F6B2DAEB0166658601A37789 /* GobanProgramPlayerEditor.nib */; };
-		F6B2DAF1016669D801A37789 /* GobanPlayerEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B2DAEF016669D801A37789 /* GobanPlayerEditor.h */; };
-		F6B2DAF2016669D801A37789 /* GobanPlayerEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B2DAF0016669D801A37789 /* GobanPlayerEditor.m */; };
-		F6B2DAF801666FF901A37789 /* GobanProgramPlayerEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B2DAF601666FF901A37789 /* GobanProgramPlayerEditor.h */; };
-		F6B2DAF901666FF901A37789 /* GobanProgramPlayerEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B2DAF701666FF901A37789 /* GobanProgramPlayerEditor.m */; };
-		F6B2DAFD01677A5401A37789 /* GobanInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B2DAFC01677A5401A37789 /* GobanInspector.m */; };
-		F6C98DD2016A275401A80011 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6C98DD1016A275401A80011 /* License.txt */; };
-		F6E216AA00BD836A01000001 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E216A900BD836A01000001 /* ApplicationServices.framework */; };
-		F6F9368D0167947501B0693B /* Inspectors.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6F9368C0167947501B0693B /* Inspectors.plist */; };
-		F6F9368F0167959A01B0693B /* Preferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6F9368E0167959901B0693B /* Preferences.plist */; };
+		43B8D0110DC0599F001128F3 /* GoGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B88660033343DC0A80006 /* GoGame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43B8D0120DC0599F001128F3 /* GoGameNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F6423721014BD0D101000001 /* GoGameNode.h */; };
+		43B8D0130DC0599F001128F3 /* GoGameTree.h in Headers */ = {isa = PBXBuildFile; fileRef = F634A44B014D53E701000001 /* GoGameTree.h */; };
+		43B8D0140DC0599F001128F3 /* GoGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B88690033343DC0A80006 /* GoGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43B8D0150DC0599F001128F3 /* GoMove.h in Headers */ = {isa = PBXBuildFile; fileRef = F642372D014C226101000001 /* GoMove.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43B8D0160DC0599F001128F3 /* GoPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B886D0033343DC0A80006 /* GoPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43B8D0170DC0599F001128F3 /* GoPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B886F0033343DC0A80006 /* GoPosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43B8D0180DC0599F001128F3 /* GoPositionPointEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B88710033343DC0A80006 /* GoPositionPointEnumerator.h */; };
+		43B8D0190DC0599F001128F3 /* GoRuleSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B88730033343DC0A80006 /* GoRuleSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43B8D01A0DC0599F001128F3 /* GoSymbol.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B88750033343DC0A80006 /* GoSymbol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43B8D01B0DC0599F001128F3 /* sgf.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D8DD65500EF20067F000001 /* sgf.h */; };
+		43B8D01D0DC059D4001128F3 /* GoGameDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 011B88680033343DC0A80006 /* GoGameDefaults.plist */; };
+		43B8D01E0DC059DB001128F3 /* GoGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B88670033343DC0A80006 /* GoGame.m */; };
+		43B8D01F0DC059DB001128F3 /* GoGameNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F6423722014BD0D101000001 /* GoGameNode.m */; };
+		43B8D0200DC059DB001128F3 /* GoGameTree.m in Sources */ = {isa = PBXBuildFile; fileRef = F634A44C014D53E701000001 /* GoGameTree.m */; };
+		43B8D0210DC059DB001128F3 /* GoGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B886A0033343DC0A80006 /* GoGeometry.m */; };
+		43B8D0220DC059DB001128F3 /* GoMove.m in Sources */ = {isa = PBXBuildFile; fileRef = F642372E014C226101000001 /* GoMove.m */; };
+		43B8D0230DC059DB001128F3 /* GoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B886E0033343DC0A80006 /* GoPoint.m */; };
+		43B8D0240DC059DB001128F3 /* GoPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B88700033343DC0A80006 /* GoPosition.m */; };
+		43B8D0250DC059DB001128F3 /* GoPositionPointEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B88720033343DC0A80006 /* GoPositionPointEnumerator.m */; };
+		43B8D0260DC059DB001128F3 /* GoRuleSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B88740033343DC0A80006 /* GoRuleSet.m */; };
+		43B8D0270DC059DB001128F3 /* GoSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B88760033343DC0A80006 /* GoSymbol.m */; };
+		43B8D0280DC059DB001128F3 /* sgf.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DD65400EF20067F000001 /* sgf.c */; };
+		43B8D0290DC059E2001128F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011B888B0033358FC0A80006 /* Foundation.framework */; };
+		43B8D02A0DC059E2001128F3 /* SenFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64E01A700BC8B7201000001 /* SenFoundation.framework */; };
+		43B8D0420DC05A04001128F3 /* SenFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F64E01A700BC8B7201000001 /* SenFoundation.framework */; };
+		43B8D08A0DC05BB4001128F3 /* GoGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B8D0090DC05906001128F3 /* GoGame.framework */; };
+		43B8D0930DC05BF5001128F3 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */; };
+		43B8D0940DC05BF5001128F3 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E216A900BD836A01000001 /* ApplicationServices.framework */; };
+		43B8D0950DC05BF5001128F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
+		43B8D0960DC05BF5001128F3 /* SenFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64E01A600BC8B7201000001 /* SenFoundation.framework */; };
+		43B8D43C0DC05C27001128F3 /* BlackPrisonerCaption.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8E100D436127F000001 /* BlackPrisonerCaption.tiff */; };
+		43B8D43D0DC05C27001128F3 /* BlackStone.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8D900D434037F000001 /* BlackStone.tiff */; };
+		43B8D43E0DC05C27001128F3 /* BlackStones in Resources */ = {isa = PBXBuildFile; fileRef = 0115B0DA00D96A987F000001 /* BlackStones */; };
+		43B8D43F0DC05C27001128F3 /* BlackTerritory.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8D300D433EA7F000001 /* BlackTerritory.tiff */; };
+		43B8D4400DC05C27001128F3 /* Dame.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8D400D433EA7F000001 /* Dame.tiff */; };
+		43B8D4410DC05C27001128F3 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045C3D93006DFC677F000001 /* Defaults.plist */; };
+		43B8D4420DC05C27001128F3 /* Display.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F656EED2016BCCC7011CF5BC /* Display.tiff */; };
+		43B8D4430DC05C27001128F3 /* General.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F656EED1016BCCC7011CF5BC /* General.tiff */; };
+		43B8D4440DC05C27001128F3 /* gnugo in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DA89C00335300C0A80006 /* gnugo */; };
+		43B8D4450DC05C27001128F3 /* Goban.icns in Resources */ = {isa = PBXBuildFile; fileRef = 053CBFCF003342D8C0A80006 /* Goban.icns */; };
+		43B8D4460DC05C27001128F3 /* Goban.nib in Resources */ = {isa = PBXBuildFile; fileRef = 011B8846003323B1C0A80006 /* Goban.nib */; };
+		43B8D4470DC05C27001128F3 /* GobanContextInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1543F68800DD643B7F000001 /* GobanContextInspector.nib */; };
+		43B8D4480DC05C27001128F3 /* GobanCopyrightInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1543F68500DD61B57F000001 /* GobanCopyrightInspector.nib */; };
+		43B8D4490DC05C27001128F3 /* GobanDisplayPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = F63820060161170801000001 /* GobanDisplayPreferences.nib */; };
+		43B8D44A0DC05C27001128F3 /* GobanGameDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 011B8849003323B1C0A80006 /* GobanGameDocument.nib */; };
+		43B8D44B0DC05C27001128F3 /* GobanGeneralInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1543F68200DD60C07F000001 /* GobanGeneralInspector.nib */; };
+		43B8D44C0DC05C27001128F3 /* GobanGeneralPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = F6382001016115B701000001 /* GobanGeneralPreferences.nib */; };
+		43B8D44D0DC05C27001128F3 /* GobanGnuGoPlayerEditor.nib in Resources */ = {isa = PBXBuildFile; fileRef = F6B2DAE90166658601A37789 /* GobanGnuGoPlayerEditor.nib */; };
+		43B8D44E0DC05C27001128F3 /* GobanHelp in Resources */ = {isa = PBXBuildFile; fileRef = F6A4905000C18C9701000001 /* GobanHelp */; };
+		43B8D44F0DC05C27001128F3 /* GobanMoveInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1543F67800DD003A7F000001 /* GobanMoveInspector.nib */; };
+		43B8D4500DC05C27001128F3 /* GobanPlayersPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = F638200A0161170801000001 /* GobanPlayersPreferences.nib */; };
+		43B8D4510DC05C27001128F3 /* GobanPreferenceController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 011B884B003323B1C0A80006 /* GobanPreferenceController.nib */; };
+		43B8D4520DC05C27001128F3 /* GobanProgramPlayerEditor.nib in Resources */ = {isa = PBXBuildFile; fileRef = F6B2DAEB0166658601A37789 /* GobanProgramPlayerEditor.nib */; };
+		43B8D4530DC05C27001128F3 /* GobanRulesInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 045C3D9B006E9ED87F000001 /* GobanRulesInspector.nib */; };
+		43B8D4540DC05C27001128F3 /* GobanScoreInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 045C3D99006E9ED87F000001 /* GobanScoreInspector.nib */; };
+		43B8D4550DC05C27001128F3 /* GobanSoundPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = F638200E0161170801000001 /* GobanSoundPreferences.nib */; };
+		43B8D4560DC05C27001128F3 /* Info.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 664D73F0008081A27F000001 /* Info.tiff */; };
+		43B8D4570DC05C27001128F3 /* InfoPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 011B884F003323B1C0A80006 /* InfoPanel.nib */; };
+		43B8D4580DC05C27001128F3 /* Inspectors.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6F9368C0167947501B0693B /* Inspectors.plist */; };
+		43B8D4590DC05C27001128F3 /* KayaBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 0109709400D04A387F000001 /* KayaBoard.png */; };
+		43B8D45A0DC05C27001128F3 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6C98DD1016A275401A80011 /* License.txt */; };
+		43B8D45B0DC05C27001128F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00ED9B8A00825ED47F000001 /* Localizable.strings */; };
+		43B8D45C0DC05C27001128F3 /* Opponents.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 011B882B00332332C0A80006 /* Opponents.tiff */; };
+		43B8D45D0DC05C27001128F3 /* Pass.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 664D73F1008081A27F000001 /* Pass.tiff */; };
+		43B8D45E0DC05C27001128F3 /* Play.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 664D73F2008081A27F000001 /* Play.tiff */; };
+		43B8D45F0DC05C27001128F3 /* Players.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F656EED5016BCCC7011CF5BC /* Players.tiff */; };
+		43B8D4600DC05C27001128F3 /* Preferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6F9368E0167959901B0693B /* Preferences.plist */; };
+		43B8D4610DC05C27001128F3 /* Resign.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 664D73F3008081A27F000001 /* Resign.tiff */; };
+		43B8D4620DC05C27001128F3 /* SenteGoban.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F66AAE4D00DA6C2801000001 /* SenteGoban.tiff */; };
+		43B8D4630DC05C27001128F3 /* sgf.icns in Resources */ = {isa = PBXBuildFile; fileRef = 053CBFD0003342D8C0A80006 /* sgf.icns */; };
+		43B8D4640DC05C27001128F3 /* Sound.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F656EED3016BCCC7011CF5BC /* Sound.tiff */; };
+		43B8D4650DC05C27001128F3 /* sparrows.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 44AF327400D43FA97F000001 /* sparrows.tiff */; };
+		43B8D4660DC05C27001128F3 /* Speech.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F656EED4016BCCC7011CF5BC /* Speech.tiff */; };
+		43B8D4670DC05C27001128F3 /* Tink.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 00F1B188008523C07F000001 /* Tink.aiff */; };
+		43B8D4680DC05C27001128F3 /* Tock.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 172B40780083B18F7F000001 /* Tock.aiff */; };
+		43B8D4690DC05C27001128F3 /* Undo.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 664D73F4008081A27F000001 /* Undo.tiff */; };
+		43B8D46A0DC05C27001128F3 /* WhitePrisonerCaption.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8E200D436127F000001 /* WhitePrisonerCaption.tiff */; };
+		43B8D46B0DC05C27001128F3 /* WhiteStone.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8DE00D4341A7F000001 /* WhiteStone.tiff */; };
+		43B8D46C0DC05C27001128F3 /* WhiteStones in Resources */ = {isa = PBXBuildFile; fileRef = 0115B0DB00D96A987F000001 /* WhiteStones */; };
+		43B8D46D0DC05C27001128F3 /* WhiteTerritory.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 155CF8D500D433EA7F000001 /* WhiteTerritory.tiff */; };
+		43B8D46E0DC05C3A001128F3 /* gmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 053CBFC600333FFFC0A80006 /* gmp.c */; };
+		43B8D46F0DC05C3A001128F3 /* Goban_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B8812003322FCC0A80006 /* Goban_main.m */; };
+		43B8D4700DC05C3A001128F3 /* GobanApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F1B185008520247F000001 /* GobanApplicationDelegate.m */; };
+		43B8D4710DC05C3A001128F3 /* GobanBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A809D00CDB7D47F000001 /* GobanBoardView.m */; };
+		43B8D4720DC05C3A001128F3 /* GobanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0115B0D200D941AF7F000001 /* GobanCell.m */; };
+		43B8D4730DC05C3A001128F3 /* GobanDisplayPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F63820050161170801000001 /* GobanDisplayPreferences.m */; };
+		43B8D4740DC05C3A001128F3 /* GobanGameDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B8807003322FCC0A80006 /* GobanGameDocument.m */; };
+		43B8D4750DC05C3A001128F3 /* GobanGeneralPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F6381FFA0161110401000001 /* GobanGeneralPreferences.m */; };
+		43B8D4760DC05C3A001128F3 /* GobanGMPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B8809003322FCC0A80006 /* GobanGMPPlayer.m */; };
+		43B8D4770DC05C3A001128F3 /* GobanGnuGoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6381FED016104EF01000001 /* GobanGnuGoPlayer.m */; };
+		43B8D4780DC05C3A001128F3 /* GobanGnuGoPlayerEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B2DAE6016664E601A37789 /* GobanGnuGoPlayerEditor.m */; };
+		43B8D4790DC05C3A001128F3 /* GobanGoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 018CE32300D2B3FA7F000001 /* GobanGoke.m */; };
+		43B8D47A0DC05C3A001128F3 /* GobanGTPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D3785015E0B4E01000001 /* GobanGTPPlayer.m */; };
+		43B8D47B0DC05C3A001128F3 /* GobanHumanPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B880D003322FCC0A80006 /* GobanHumanPlayer.m */; };
+		43B8D47C0DC05C3A001128F3 /* GobanInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B2DAFC01677A5401A37789 /* GobanInspector.m */; };
+		43B8D47D0DC05C3A001128F3 /* GobanInspectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F622570800C8E30C01000001 /* GobanInspectorController.m */; };
+		43B8D47E0DC05C3A001128F3 /* GobanMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 053CBFC200333F6FC0A80006 /* GobanMatrix.m */; };
+		43B8D47F0DC05C3A001128F3 /* GobanMoveInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1543F67C00DD31237F000001 /* GobanMoveInspector.m */; };
+		43B8D4800DC05C3A001128F3 /* GobanPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B880F003322FCC0A80006 /* GobanPlayer.m */; };
+		43B8D4810DC05C3A001128F3 /* GobanPlayerDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = F638953D016500DD01BA2653 /* GobanPlayerDefaults.m */; };
+		43B8D4820DC05C3A001128F3 /* GobanPlayerEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B2DAF0016669D801A37789 /* GobanPlayerEditor.m */; };
+		43B8D4830DC05C3A001128F3 /* GobanPlayersPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F63820090161170801000001 /* GobanPlayersPreferences.m */; };
+		43B8D4840DC05C3A001128F3 /* GobanPreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011B8811003322FCC0A80006 /* GobanPreferenceController.m */; };
+		43B8D4850DC05C3A001128F3 /* GobanPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F6381FFE016111A701000001 /* GobanPreferences.m */; };
+		43B8D4860DC05C3A001128F3 /* GobanProgramPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F63BD096015EAAAE01000001 /* GobanProgramPlayer.m */; };
+		43B8D4870DC05C3A001128F3 /* GobanProgramPlayerEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B2DAF701666FF901A37789 /* GobanProgramPlayerEditor.m */; };
+		43B8D4880DC05C3A001128F3 /* GobanProgressItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F61573C301692CDD01302650 /* GobanProgressItem.m */; };
+		43B8D4890DC05C3A001128F3 /* GobanRulesInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 045C3DA0006E9FF27F000001 /* GobanRulesInspector.m */; };
+		43B8D48A0DC05C3A001128F3 /* GobanScoreInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A069A007FC95E7F000001 /* GobanScoreInspector.m */; };
+		43B8D48B0DC05C3A001128F3 /* GobanSoundPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F638200D0161170801000001 /* GobanSoundPreferences.m */; };
+		43B8D48C0DC05C3A001128F3 /* GobanToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 664D73FB00808C7C7F000001 /* GobanToolbar.m */; };
+		43B8D48D0DC05C3A001128F3 /* GobanUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B2DADC0166615B01A37789 /* GobanUser.m */; };
+		43B8D48E0DC05C3A001128F3 /* GobanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045C3D8C006D3D487F000001 /* GobanView.m */; };
+		43B8D48F0DC05C3A001128F3 /* InfoPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053CBFCC003342BEC0A80006 /* InfoPanelController.m */; };
+		43B8D4900DC05C3A001128F3 /* SenInterfaceValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = F61272F400CA541401000001 /* SenInterfaceValidation.m */; };
+		43B8D4940DC05C60001128F3 /* SenFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F64E01A600BC8B7201000001 /* SenFoundation.framework */; };
+		43B8D4FC0DC0604E001128F3 /* gmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 053CBFC700333FFFC0A80006 /* gmp.h */; };
+		43B8D4FD0DC0604E001128F3 /* GobanApplicationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F1B184008520247F000001 /* GobanApplicationDelegate.h */; };
+		43B8D4FE0DC0604E001128F3 /* GobanBoardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 044A809C00CDB7D47F000001 /* GobanBoardView.h */; };
+		43B8D4FF0DC0604E001128F3 /* GobanCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0115B0D100D941AF7F000001 /* GobanCell.h */; };
+		43B8D5000DC0604E001128F3 /* GobanDisplayPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F63820040161170801000001 /* GobanDisplayPreferences.h */; };
+		43B8D5010DC0604E001128F3 /* GobanGameDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B8806003322FCC0A80006 /* GobanGameDocument.h */; };
+		43B8D5020DC0604E001128F3 /* GobanGeneralPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F6381FF90161110401000001 /* GobanGeneralPreferences.h */; };
+		43B8D5030DC0604E001128F3 /* GobanGMPPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B8808003322FCC0A80006 /* GobanGMPPlayer.h */; };
+		43B8D5040DC0604E001128F3 /* GobanGnuGoPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F6381FEC016104EF01000001 /* GobanGnuGoPlayer.h */; };
+		43B8D5050DC0604E001128F3 /* GobanGnuGoPlayerEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B2DAE5016664E601A37789 /* GobanGnuGoPlayerEditor.h */; };
+		43B8D5060DC0604E001128F3 /* GobanGoke.h in Headers */ = {isa = PBXBuildFile; fileRef = 018CE32200D2B3FA7F000001 /* GobanGoke.h */; };
+		43B8D5070DC0604E001128F3 /* GobanGTPPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D3784015E0B4E01000001 /* GobanGTPPlayer.h */; };
+		43B8D5080DC0604E001128F3 /* GobanHumanPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B880C003322FCC0A80006 /* GobanHumanPlayer.h */; };
+		43B8D5090DC0604E001128F3 /* GobanInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = F639E67E015BC8B201000001 /* GobanInspector.h */; };
+		43B8D50A0DC0604E001128F3 /* GobanInspectorController.h in Headers */ = {isa = PBXBuildFile; fileRef = F622570700C8E30C01000001 /* GobanInspectorController.h */; };
+		43B8D50B0DC0604E001128F3 /* GobanMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 053CBFC100333F6FC0A80006 /* GobanMatrix.h */; };
+		43B8D50C0DC0604E001128F3 /* GobanMoveInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 1543F67B00DD31237F000001 /* GobanMoveInspector.h */; };
+		43B8D50D0DC0604E001128F3 /* GobanPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B880E003322FCC0A80006 /* GobanPlayer.h */; };
+		43B8D50E0DC0604E001128F3 /* GobanPlayerDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = F638953C016500DD01BA2653 /* GobanPlayerDefaults.h */; };
+		43B8D50F0DC0604E001128F3 /* GobanPlayerEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B2DAEF016669D801A37789 /* GobanPlayerEditor.h */; };
+		43B8D5100DC0604E001128F3 /* GobanPlayersPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F63820080161170801000001 /* GobanPlayersPreferences.h */; };
+		43B8D5110DC0604E001128F3 /* GobanPreferenceController.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B8810003322FCC0A80006 /* GobanPreferenceController.h */; };
+		43B8D5120DC0604E001128F3 /* GobanPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F6381FFD016111A701000001 /* GobanPreferences.h */; };
+		43B8D5130DC0604E001128F3 /* GobanProgramPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F63BD095015EAAAE01000001 /* GobanProgramPlayer.h */; };
+		43B8D5140DC0604E001128F3 /* GobanProgramPlayerEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B2DAF601666FF901A37789 /* GobanProgramPlayerEditor.h */; };
+		43B8D5150DC0604E001128F3 /* GobanProgressItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F61573C201692CDD01302650 /* GobanProgressItem.h */; };
+		43B8D5160DC0604E001128F3 /* GobanRulesInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 045C3D9F006E9FF27F000001 /* GobanRulesInspector.h */; };
+		43B8D5170DC0604E001128F3 /* GobanScoreInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9A0699007FC95E7F000001 /* GobanScoreInspector.h */; };
+		43B8D5180DC0604E001128F3 /* GobanSoundPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F638200C0161170801000001 /* GobanSoundPreferences.h */; };
+		43B8D5190DC0604E001128F3 /* GobanToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 664D73FA00808C7C7F000001 /* GobanToolbar.h */; };
+		43B8D51A0DC0604E001128F3 /* GobanUser.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B2DADB0166615B01A37789 /* GobanUser.h */; };
+		43B8D51B0DC0604E001128F3 /* GobanView.h in Headers */ = {isa = PBXBuildFile; fileRef = 045C3D8B006D3D487F000001 /* GobanView.h */; };
+		43B8D51C0DC0604E001128F3 /* InfoPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 053CBFCB003342BEC0A80006 /* InfoPanelController.h */; };
+		43B8D51D0DC0604E001128F3 /* SenInterfaceValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = F61272F300CA541401000001 /* SenInterfaceValidation.h */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		00EBEBD0006D37337F000001 /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				OPTIMIZATION_CFLAGS = "-O0";
-				OTHER_CFLAGS = "\U0001-DDEBUG";
-				ZERO_LINK = YES;
-			};
-			name = Development;
-		};
-		00EBEBD1006D37337F000001 /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				OTHER_CFLAGS = "\U0001-DNODEBUG";
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXContainerItemProxy section */
-		43CD7B880DBFCD7D00644FF2 /* PBXContainerItemProxy */ = {
+		43B8D0880DC05BAB001128F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 011B885800333007C0A80006 /* GoGame */;
+			remoteGlobalIDString = 43B8D0080DC05906001128F3 /* GoGame */;
 			remoteInfo = GoGame;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		07D2683F0081287E7F000001 /* CopyFiles */ = {
+		43B8D0450DC05A29001128F3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F6272842016A553B0149DA90 /* SenFoundation.framework in CopyFiles */,
+				43B8D0420DC05A04001128F3 /* SenFoundation.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		07D26841008129697F000001 /* CopyFiles */ = {
+		43B8D4970DC05C7F001128F3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F667BF5E00BCE4C001000001 /* SenFoundation.framework in CopyFiles */,
-				07D2684700812D187F000001 /* GoGame.framework in CopyFiles */,
+				43B8D4940DC05C60001128F3 /* SenFoundation.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -341,7 +219,6 @@
 		011B884A003323B1C0A80006 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/GobanGameDocument.nib; sourceTree = "<group>"; };
 		011B884C003323B1C0A80006 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/GobanPreferenceController.nib; sourceTree = "<group>"; };
 		011B8850003323B1C0A80006 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/InfoPanel.nib; sourceTree = "<group>"; };
-		011B885600333007C0A80006 /* GoGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		011B88660033343DC0A80006 /* GoGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoGame.h; sourceTree = "<group>"; };
 		011B88670033343DC0A80006 /* GoGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoGame.m; sourceTree = "<group>"; };
 		011B88680033343DC0A80006 /* GoGameDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = GoGameDefaults.plist; sourceTree = "<group>"; };
@@ -395,11 +272,14 @@
 		155CF8E100D436127F000001 /* BlackPrisonerCaption.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = BlackPrisonerCaption.tiff; sourceTree = "<group>"; };
 		155CF8E200D436127F000001 /* WhitePrisonerCaption.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = WhitePrisonerCaption.tiff; sourceTree = "<group>"; };
 		172B40780083B18F7F000001 /* Tock.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Tock.aiff; sourceTree = "<group>"; };
-		1758732AFF379DA111CA2CBB /* Goban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Goban.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2C9A0699007FC95E7F000001 /* GobanScoreInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GobanScoreInspector.h; sourceTree = "<group>"; };
 		2C9A069A007FC95E7F000001 /* GobanScoreInspector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GobanScoreInspector.m; sourceTree = "<group>"; };
+		43B8D0090DC05906001128F3 /* GoGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B8D00A0DC05906001128F3 /* GoGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoGame-Info.plist"; sourceTree = "<group>"; };
+		43B8D0820DC05B96001128F3 /* Goban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goban.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B8D0840DC05B96001128F3 /* Goban-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Goban-Info.plist"; sourceTree = "<group>"; };
 		44AF327400D43FA97F000001 /* sparrows.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = sparrows.tiff; sourceTree = "<group>"; };
 		664D73F0008081A27F000001 /* Info.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Info.tiff; sourceTree = "<group>"; };
 		664D73F1008081A27F000001 /* Pass.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Pass.tiff; sourceTree = "<group>"; };
@@ -414,7 +294,6 @@
 		F61573C301692CDD01302650 /* GobanProgressItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GobanProgressItem.m; sourceTree = "<group>"; };
 		F622570700C8E30C01000001 /* GobanInspectorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GobanInspectorController.h; sourceTree = "<group>"; };
 		F622570800C8E30C01000001 /* GobanInspectorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GobanInspectorController.m; sourceTree = "<group>"; };
-		F626A59F00BC1D4C01000001 /* GoGame.framework */ = {isa = PBXFileReference; lastKnownFileType = file; path = GoGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62D3784015E0B4E01000001 /* GobanGTPPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GobanGTPPlayer.h; sourceTree = "<group>"; };
 		F62D3785015E0B4E01000001 /* GobanGTPPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GobanGTPPlayer.m; sourceTree = "<group>"; };
 		F634A44B014D53E701000001 /* GoGameTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GoGameTree.h; path = GoGame/GoGameTree.h; sourceTree = SOURCE_ROOT; };
@@ -444,8 +323,8 @@
 		F6423722014BD0D101000001 /* GoGameNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GoGameNode.m; path = GoGame/GoGameNode.m; sourceTree = SOURCE_ROOT; };
 		F642372D014C226101000001 /* GoMove.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GoMove.h; path = GoGame/GoMove.h; sourceTree = SOURCE_ROOT; };
 		F642372E014C226101000001 /* GoMove.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GoMove.m; path = GoGame/GoMove.m; sourceTree = SOURCE_ROOT; };
-		F64E01A600BC8B7201000001 /* SenFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = file; path = SenFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F64E01A700BC8B7201000001 /* SenFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = file; path = SenFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64E01A600BC8B7201000001 /* SenFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64E01A700BC8B7201000001 /* SenFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F656EED1016BCCC7011CF5BC /* General.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = General.tiff; sourceTree = "<group>"; };
 		F656EED2016BCCC7011CF5BC /* Display.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Display.tiff; sourceTree = "<group>"; };
 		F656EED3016BCCC7011CF5BC /* Sound.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Sound.tiff; sourceTree = "<group>"; };
@@ -471,103 +350,25 @@
 		F6F936900167985401B0693B /* sgf_LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sgf_LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworkTarget section */
-		011B885800333007C0A80006 /* GoGame */ = {
-			isa = PBXFrameworkTarget;
-			buildConfigurationList = 43CD7D2B0DBFCD8300644FF2 /* Build configuration list for PBXFrameworkTarget "GoGame" */;
-			buildPhases = (
-				011B885900333007C0A80006 /* Headers */,
-				011B885A00333007C0A80006 /* Resources */,
-				011B885B00333007C0A80006 /* Sources */,
-				011B885C00333007C0A80006 /* Frameworks */,
-				011B885D00333007C0A80006 /* Rez */,
-				07D2683F0081287E7F000001 /* CopyFiles */,
-			);
-			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					/Library/Frameworks,
-				);
-				FRAMEWORK_VERSION = A;
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				OPTIMIZATION_CFLAGS = "-O3";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = (
-					"-seg1addr",
-					0x10000000,
-				);
-				OTHER_LIBTOOL_FLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRINCIPAL_CLASS = "";
-				PRODUCT_NAME = GoGame;
-				SECTORDER_FLAGS = "";
-				SKIP_INSTALL = YES;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = framework;
-			};
-			dependencies = (
-			);
-			name = GoGame;
-			productInstallPath = "@executable_path/../Frameworks";
-			productName = GoGame;
-			productReference = 011B885600333007C0A80006 /* GoGame.framework */;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
-<plist version=\"1.0\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string></string>
-	<key>CFBundleGetInfoString</key>
-	<string></string>
-	<key>CFBundleIconFile</key>
-	<string></string>
-	<key>CFBundleIdentifier</key>
-	<string></string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string></string>
-	<key>CFBundlePackageType</key>
-	<string>FMWK</string>
-	<key>CFBundleShortVersionString</key>
-	<string></string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>0.0.1d1</string>
-</dict>
-</plist>
-";
-		};
-/* End PBXFrameworkTarget section */
-
 /* Begin PBXFrameworksBuildPhase section */
-		011B885C00333007C0A80006 /* Frameworks */ = {
+		43B8D0070DC05906001128F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011B889100333974C0A80006 /* Foundation.framework in Frameworks */,
-				44AF327600D445487F000001 /* SenFoundation.framework in Frameworks */,
+				43B8D0290DC059E2001128F3 /* Foundation.framework in Frameworks */,
+				43B8D02A0DC059E2001128F3 /* SenFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A37F4D1FDCFA73011CA2CEA /* Frameworks */ = {
+		43B8D0800DC05B96001128F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011B886200333379C0A80006 /* Foundation.framework in Frameworks */,
-				011B886300333379C0A80006 /* AppKit.framework in Frameworks */,
-				F64E01A900BC8B7201000001 /* SenFoundation.framework in Frameworks */,
-				F667BF5D00BCE4C001000001 /* GoGame.framework in Frameworks */,
-				F6E216AA00BD836A01000001 /* ApplicationServices.framework in Frameworks */,
+				43B8D0930DC05BF5001128F3 /* AppKit.framework in Frameworks */,
+				43B8D0940DC05BF5001128F3 /* ApplicationServices.framework in Frameworks */,
+				43B8D0950DC05BF5001128F3 /* Foundation.framework in Frameworks */,
+				43B8D0960DC05BF5001128F3 /* SenFoundation.framework in Frameworks */,
+				43B8D08A0DC05BB4001128F3 /* GoGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,6 +469,7 @@
 		045C3D92006DFBF37F000001 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				43B8D00A0DC05906001128F3 /* GoGame-Info.plist */,
 				02E199A800A0C9B57F000001 /* ToDo.notes */,
 				045C3D93006DFC677F000001 /* Defaults.plist */,
 				00ED9B8A00825ED47F000001 /* Localizable.strings */,
@@ -700,8 +502,8 @@
 		19C28FB0FE9D524F11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1758732AFF379DA111CA2CBB /* Goban.app */,
-				F626A59F00BC1D4C01000001 /* GoGame.framework */,
+				43B8D0090DC05906001128F3 /* GoGame.framework */,
+				43B8D0820DC05B96001128F3 /* Goban.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -728,6 +530,7 @@
 				1AE297B2008533867F000001 /* Sounds */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
+				43B8D0840DC05B96001128F3 /* Goban-Info.plist */,
 			);
 			name = Goban;
 			sourceTree = "<group>";
@@ -738,7 +541,6 @@
 				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
 				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
 				F64E01A600BC8B7201000001 /* SenFoundation.framework */,
-				011B885600333007C0A80006 /* GoGame.framework */,
 				F6E216A900BD836A01000001 /* ApplicationServices.framework */,
 			);
 			name = Frameworks;
@@ -858,240 +660,261 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		011B885900333007C0A80006 /* Headers */ = {
+		43B8D0040DC05906001128F3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011B88770033343DC0A80006 /* GoGame.h in Headers */,
-				011B88780033343DC0A80006 /* GoGeometry.h in Headers */,
-				011B887A0033343DC0A80006 /* GoPoint.h in Headers */,
-				011B887B0033343DC0A80006 /* GoPosition.h in Headers */,
-				011B887C0033343DC0A80006 /* GoPositionPointEnumerator.h in Headers */,
-				011B887D0033343DC0A80006 /* GoRuleSet.h in Headers */,
-				011B887E0033343DC0A80006 /* GoSymbol.h in Headers */,
-				0D8DD65600EF20067F000001 /* sgf.h in Headers */,
-				F6423723014BD0D101000001 /* GoGameNode.h in Headers */,
-				F642372F014C226101000001 /* GoMove.h in Headers */,
-				F634A44D014D53E701000001 /* GoGameTree.h in Headers */,
+				43B8D0110DC0599F001128F3 /* GoGame.h in Headers */,
+				43B8D0120DC0599F001128F3 /* GoGameNode.h in Headers */,
+				43B8D0130DC0599F001128F3 /* GoGameTree.h in Headers */,
+				43B8D0140DC0599F001128F3 /* GoGeometry.h in Headers */,
+				43B8D0150DC0599F001128F3 /* GoMove.h in Headers */,
+				43B8D0160DC0599F001128F3 /* GoPoint.h in Headers */,
+				43B8D0170DC0599F001128F3 /* GoPosition.h in Headers */,
+				43B8D0180DC0599F001128F3 /* GoPositionPointEnumerator.h in Headers */,
+				43B8D0190DC0599F001128F3 /* GoRuleSet.h in Headers */,
+				43B8D01A0DC0599F001128F3 /* GoSymbol.h in Headers */,
+				43B8D01B0DC0599F001128F3 /* sgf.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A37F4C7FDCFA73011CA2CEA /* Headers */ = {
+		43B8D52B0DC0605F001128F3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011B8813003322FCC0A80006 /* GobanGameDocument.h in Headers */,
-				011B8814003322FCC0A80006 /* GobanGMPPlayer.h in Headers */,
-				011B8816003322FCC0A80006 /* GobanHumanPlayer.h in Headers */,
-				011B8817003322FCC0A80006 /* GobanPlayer.h in Headers */,
-				011B8818003322FCC0A80006 /* GobanPreferenceController.h in Headers */,
-				053CBFC300333F6FC0A80006 /* GobanMatrix.h in Headers */,
-				053CBFC800333FFFC0A80006 /* gmp.h in Headers */,
-				053CBFCD003342BEC0A80006 /* InfoPanelController.h in Headers */,
-				045C3D8D006D3D487F000001 /* GobanView.h in Headers */,
-				045C3DA1006E9FF27F000001 /* GobanRulesInspector.h in Headers */,
-				2C9A069B007FC95E7F000001 /* GobanScoreInspector.h in Headers */,
-				664D73FC00808C7C7F000001 /* GobanToolbar.h in Headers */,
-				00F1B186008520247F000001 /* GobanApplicationDelegate.h in Headers */,
-				F622570900C8E30C01000001 /* GobanInspectorController.h in Headers */,
-				F61272F500CA541401000001 /* SenInterfaceValidation.h in Headers */,
-				044A809E00CDB7D47F000001 /* GobanBoardView.h in Headers */,
-				018CE32400D2B3FA7F000001 /* GobanGoke.h in Headers */,
-				0115B0D300D941AF7F000001 /* GobanCell.h in Headers */,
-				1543F67D00DD31237F000001 /* GobanMoveInspector.h in Headers */,
-				F639E67F015BC8B201000001 /* GobanInspector.h in Headers */,
-				F62D3786015E0B4E01000001 /* GobanGTPPlayer.h in Headers */,
-				F63BD097015EAAAE01000001 /* GobanProgramPlayer.h in Headers */,
-				F6381FEE016104EF01000001 /* GobanGnuGoPlayer.h in Headers */,
-				F6381FFB0161110401000001 /* GobanGeneralPreferences.h in Headers */,
-				F6381FFF016111A701000001 /* GobanPreferences.h in Headers */,
-				F63820100161170801000001 /* GobanSoundPreferences.h in Headers */,
-				F63820110161170801000001 /* GobanPlayersPreferences.h in Headers */,
-				F63820120161170801000001 /* GobanDisplayPreferences.h in Headers */,
-				F638953E016500DE01BA2653 /* GobanPlayerDefaults.h in Headers */,
-				F6B2DADD0166615B01A37789 /* GobanUser.h in Headers */,
-				F6B2DAE7016664E601A37789 /* GobanGnuGoPlayerEditor.h in Headers */,
-				F6B2DAF1016669D801A37789 /* GobanPlayerEditor.h in Headers */,
-				F6B2DAF801666FF901A37789 /* GobanProgramPlayerEditor.h in Headers */,
-				F61573C401692CDD01302650 /* GobanProgressItem.h in Headers */,
+				43B8D4FC0DC0604E001128F3 /* gmp.h in Headers */,
+				43B8D4FD0DC0604E001128F3 /* GobanApplicationDelegate.h in Headers */,
+				43B8D4FE0DC0604E001128F3 /* GobanBoardView.h in Headers */,
+				43B8D4FF0DC0604E001128F3 /* GobanCell.h in Headers */,
+				43B8D5000DC0604E001128F3 /* GobanDisplayPreferences.h in Headers */,
+				43B8D5010DC0604E001128F3 /* GobanGameDocument.h in Headers */,
+				43B8D5020DC0604E001128F3 /* GobanGeneralPreferences.h in Headers */,
+				43B8D5030DC0604E001128F3 /* GobanGMPPlayer.h in Headers */,
+				43B8D5040DC0604E001128F3 /* GobanGnuGoPlayer.h in Headers */,
+				43B8D5050DC0604E001128F3 /* GobanGnuGoPlayerEditor.h in Headers */,
+				43B8D5060DC0604E001128F3 /* GobanGoke.h in Headers */,
+				43B8D5070DC0604E001128F3 /* GobanGTPPlayer.h in Headers */,
+				43B8D5080DC0604E001128F3 /* GobanHumanPlayer.h in Headers */,
+				43B8D5090DC0604E001128F3 /* GobanInspector.h in Headers */,
+				43B8D50A0DC0604E001128F3 /* GobanInspectorController.h in Headers */,
+				43B8D50B0DC0604E001128F3 /* GobanMatrix.h in Headers */,
+				43B8D50C0DC0604E001128F3 /* GobanMoveInspector.h in Headers */,
+				43B8D50D0DC0604E001128F3 /* GobanPlayer.h in Headers */,
+				43B8D50E0DC0604E001128F3 /* GobanPlayerDefaults.h in Headers */,
+				43B8D50F0DC0604E001128F3 /* GobanPlayerEditor.h in Headers */,
+				43B8D5100DC0604E001128F3 /* GobanPlayersPreferences.h in Headers */,
+				43B8D5110DC0604E001128F3 /* GobanPreferenceController.h in Headers */,
+				43B8D5120DC0604E001128F3 /* GobanPreferences.h in Headers */,
+				43B8D5130DC0604E001128F3 /* GobanProgramPlayer.h in Headers */,
+				43B8D5140DC0604E001128F3 /* GobanProgramPlayerEditor.h in Headers */,
+				43B8D5150DC0604E001128F3 /* GobanProgressItem.h in Headers */,
+				43B8D5160DC0604E001128F3 /* GobanRulesInspector.h in Headers */,
+				43B8D5170DC0604E001128F3 /* GobanScoreInspector.h in Headers */,
+				43B8D5180DC0604E001128F3 /* GobanSoundPreferences.h in Headers */,
+				43B8D5190DC0604E001128F3 /* GobanToolbar.h in Headers */,
+				43B8D51A0DC0604E001128F3 /* GobanUser.h in Headers */,
+				43B8D51B0DC0604E001128F3 /* GobanView.h in Headers */,
+				43B8D51C0DC0604E001128F3 /* InfoPanelController.h in Headers */,
+				43B8D51D0DC0604E001128F3 /* SenInterfaceValidation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
+/* Begin PBXNativeTarget section */
+		43B8D0080DC05906001128F3 /* GoGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B8D00E0DC05907001128F3 /* Build configuration list for PBXNativeTarget "GoGame" */;
+			buildPhases = (
+				43B8D0040DC05906001128F3 /* Headers */,
+				43B8D0050DC05906001128F3 /* Resources */,
+				43B8D0060DC05906001128F3 /* Sources */,
+				43B8D0070DC05906001128F3 /* Frameworks */,
+				43B8D0450DC05A29001128F3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoGame;
+			productName = GoGame;
+			productReference = 43B8D0090DC05906001128F3 /* GoGame.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43B8D0810DC05B96001128F3 /* Goban */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B8D0870DC05B97001128F3 /* Build configuration list for PBXNativeTarget "Goban" */;
+			buildPhases = (
+				43B8D52B0DC0605F001128F3 /* Headers */,
+				43B8D07E0DC05B96001128F3 /* Resources */,
+				43B8D07F0DC05B96001128F3 /* Sources */,
+				43B8D0800DC05B96001128F3 /* Frameworks */,
+				43B8D4970DC05C7F001128F3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43B8D0890DC05BAB001128F3 /* PBXTargetDependency */,
+			);
+			name = Goban;
+			productName = Goban;
+			productReference = 43B8D0820DC05B96001128F3 /* Goban.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 43CD7D330DBFCD8300644FF2 /* Build configuration list for PBXProject "Goban" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				00EBEBD0006D37337F000001 /* Development */,
-				00EBEBD1006D37337F000001 /* Deployment */,
-			);
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 0;
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* Goban */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
-				2A37F4C6FDCFA73011CA2CEA /* Goban */,
-				011B885800333007C0A80006 /* GoGame */,
+				43B8D0810DC05B96001128F3 /* Goban */,
+				43B8D0080DC05906001128F3 /* GoGame */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		011B885A00333007C0A80006 /* Resources */ = {
+		43B8D0050DC05906001128F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011B887F0033343DC0A80006 /* GoGameDefaults.plist in Resources */,
+				43B8D01D0DC059D4001128F3 /* GoGameDefaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A37F4C9FDCFA73011CA2CEA /* Resources */ = {
+		43B8D07E0DC05B96001128F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011B883E00332332C0A80006 /* Opponents.tiff in Resources */,
-				011B8851003323B1C0A80006 /* Goban.nib in Resources */,
-				011B8852003323B1C0A80006 /* GobanGameDocument.nib in Resources */,
-				011B8853003323B1C0A80006 /* GobanPreferenceController.nib in Resources */,
-				011B8855003323B1C0A80006 /* InfoPanel.nib in Resources */,
-				053CBFD1003342D8C0A80006 /* Goban.icns in Resources */,
-				053CBFD2003342D8C0A80006 /* sgf.icns in Resources */,
-				0A0DA89D00335300C0A80006 /* gnugo in Resources */,
-				045C3D94006DFC677F000001 /* Defaults.plist in Resources */,
-				045C3D9D006E9ED87F000001 /* GobanScoreInspector.nib in Resources */,
-				045C3D9E006E9ED87F000001 /* GobanRulesInspector.nib in Resources */,
-				664D73F5008081A27F000001 /* Info.tiff in Resources */,
-				664D73F6008081A27F000001 /* Pass.tiff in Resources */,
-				664D73F7008081A27F000001 /* Play.tiff in Resources */,
-				664D73F8008081A27F000001 /* Resign.tiff in Resources */,
-				664D73F9008081A27F000001 /* Undo.tiff in Resources */,
-				00ED9B8B00825ED47F000001 /* Localizable.strings in Resources */,
-				172B40790083B18F7F000001 /* Tock.aiff in Resources */,
-				00F1B189008523C07F000001 /* Tink.aiff in Resources */,
-				F6A4905100C18C9701000001 /* GobanHelp in Resources */,
-				018CE32100D1A9D67F000001 /* KayaBoard.png in Resources */,
-				155CF8D600D433EA7F000001 /* BlackTerritory.tiff in Resources */,
-				155CF8D700D433EA7F000001 /* Dame.tiff in Resources */,
-				155CF8D800D433EA7F000001 /* WhiteTerritory.tiff in Resources */,
-				155CF8DA00D434037F000001 /* BlackStone.tiff in Resources */,
-				155CF8E000D4341A7F000001 /* WhiteStone.tiff in Resources */,
-				155CF8E300D436127F000001 /* BlackPrisonerCaption.tiff in Resources */,
-				155CF8E400D436127F000001 /* WhitePrisonerCaption.tiff in Resources */,
-				44AF327500D43FA97F000001 /* sparrows.tiff in Resources */,
-				0115B0DC00D96A987F000001 /* BlackStones in Resources */,
-				0115B0DD00D96A987F000001 /* WhiteStones in Resources */,
-				F66AAE4E00DA6C2801000001 /* SenteGoban.tiff in Resources */,
-				1543F67A00DD003A7F000001 /* GobanMoveInspector.nib in Resources */,
-				1543F68400DD60C07F000001 /* GobanGeneralInspector.nib in Resources */,
-				1543F68700DD61B57F000001 /* GobanCopyrightInspector.nib in Resources */,
-				1543F68A00DD643B7F000001 /* GobanContextInspector.nib in Resources */,
-				F6382003016115B701000001 /* GobanGeneralPreferences.nib in Resources */,
-				F63820130161170801000001 /* GobanDisplayPreferences.nib in Resources */,
-				F63820140161170801000001 /* GobanPlayersPreferences.nib in Resources */,
-				F63820150161170801000001 /* GobanSoundPreferences.nib in Resources */,
-				F6B2DAED0166658601A37789 /* GobanGnuGoPlayerEditor.nib in Resources */,
-				F6B2DAEE0166658601A37789 /* GobanProgramPlayerEditor.nib in Resources */,
-				F6F9368D0167947501B0693B /* Inspectors.plist in Resources */,
-				F6F9368F0167959A01B0693B /* Preferences.plist in Resources */,
-				F6C98DD2016A275401A80011 /* License.txt in Resources */,
-				F656EED6016BCCC7011CF5BC /* General.tiff in Resources */,
-				F656EED7016BCCC7011CF5BC /* Display.tiff in Resources */,
-				F656EED8016BCCC7011CF5BC /* Sound.tiff in Resources */,
-				F656EED9016BCCC7011CF5BC /* Speech.tiff in Resources */,
-				F656EEDA016BCCC7011CF5BC /* Players.tiff in Resources */,
+				43B8D43C0DC05C27001128F3 /* BlackPrisonerCaption.tiff in Resources */,
+				43B8D43D0DC05C27001128F3 /* BlackStone.tiff in Resources */,
+				43B8D43E0DC05C27001128F3 /* BlackStones in Resources */,
+				43B8D43F0DC05C27001128F3 /* BlackTerritory.tiff in Resources */,
+				43B8D4400DC05C27001128F3 /* Dame.tiff in Resources */,
+				43B8D4410DC05C27001128F3 /* Defaults.plist in Resources */,
+				43B8D4420DC05C27001128F3 /* Display.tiff in Resources */,
+				43B8D4430DC05C27001128F3 /* General.tiff in Resources */,
+				43B8D4440DC05C27001128F3 /* gnugo in Resources */,
+				43B8D4450DC05C27001128F3 /* Goban.icns in Resources */,
+				43B8D4460DC05C27001128F3 /* Goban.nib in Resources */,
+				43B8D4470DC05C27001128F3 /* GobanContextInspector.nib in Resources */,
+				43B8D4480DC05C27001128F3 /* GobanCopyrightInspector.nib in Resources */,
+				43B8D4490DC05C27001128F3 /* GobanDisplayPreferences.nib in Resources */,
+				43B8D44A0DC05C27001128F3 /* GobanGameDocument.nib in Resources */,
+				43B8D44B0DC05C27001128F3 /* GobanGeneralInspector.nib in Resources */,
+				43B8D44C0DC05C27001128F3 /* GobanGeneralPreferences.nib in Resources */,
+				43B8D44D0DC05C27001128F3 /* GobanGnuGoPlayerEditor.nib in Resources */,
+				43B8D44E0DC05C27001128F3 /* GobanHelp in Resources */,
+				43B8D44F0DC05C27001128F3 /* GobanMoveInspector.nib in Resources */,
+				43B8D4500DC05C27001128F3 /* GobanPlayersPreferences.nib in Resources */,
+				43B8D4510DC05C27001128F3 /* GobanPreferenceController.nib in Resources */,
+				43B8D4520DC05C27001128F3 /* GobanProgramPlayerEditor.nib in Resources */,
+				43B8D4530DC05C27001128F3 /* GobanRulesInspector.nib in Resources */,
+				43B8D4540DC05C27001128F3 /* GobanScoreInspector.nib in Resources */,
+				43B8D4550DC05C27001128F3 /* GobanSoundPreferences.nib in Resources */,
+				43B8D4560DC05C27001128F3 /* Info.tiff in Resources */,
+				43B8D4570DC05C27001128F3 /* InfoPanel.nib in Resources */,
+				43B8D4580DC05C27001128F3 /* Inspectors.plist in Resources */,
+				43B8D4590DC05C27001128F3 /* KayaBoard.png in Resources */,
+				43B8D45A0DC05C27001128F3 /* License.txt in Resources */,
+				43B8D45B0DC05C27001128F3 /* Localizable.strings in Resources */,
+				43B8D45C0DC05C27001128F3 /* Opponents.tiff in Resources */,
+				43B8D45D0DC05C27001128F3 /* Pass.tiff in Resources */,
+				43B8D45E0DC05C27001128F3 /* Play.tiff in Resources */,
+				43B8D45F0DC05C27001128F3 /* Players.tiff in Resources */,
+				43B8D4600DC05C27001128F3 /* Preferences.plist in Resources */,
+				43B8D4610DC05C27001128F3 /* Resign.tiff in Resources */,
+				43B8D4620DC05C27001128F3 /* SenteGoban.tiff in Resources */,
+				43B8D4630DC05C27001128F3 /* sgf.icns in Resources */,
+				43B8D4640DC05C27001128F3 /* Sound.tiff in Resources */,
+				43B8D4650DC05C27001128F3 /* sparrows.tiff in Resources */,
+				43B8D4660DC05C27001128F3 /* Speech.tiff in Resources */,
+				43B8D4670DC05C27001128F3 /* Tink.aiff in Resources */,
+				43B8D4680DC05C27001128F3 /* Tock.aiff in Resources */,
+				43B8D4690DC05C27001128F3 /* Undo.tiff in Resources */,
+				43B8D46A0DC05C27001128F3 /* WhitePrisonerCaption.tiff in Resources */,
+				43B8D46B0DC05C27001128F3 /* WhiteStone.tiff in Resources */,
+				43B8D46C0DC05C27001128F3 /* WhiteStones in Resources */,
+				43B8D46D0DC05C27001128F3 /* WhiteTerritory.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXRezBuildPhase section */
-		011B885D00333007C0A80006 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		043355CEFE303625C02AAC07 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		011B885B00333007C0A80006 /* Sources */ = {
+		43B8D0060DC05906001128F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011B88800033343DC0A80006 /* GoGame.m in Sources */,
-				011B88810033343DC0A80006 /* GoGeometry.m in Sources */,
-				011B88830033343DC0A80006 /* GoPoint.m in Sources */,
-				011B88840033343DC0A80006 /* GoPosition.m in Sources */,
-				011B88850033343DC0A80006 /* GoPositionPointEnumerator.m in Sources */,
-				011B88860033343DC0A80006 /* GoRuleSet.m in Sources */,
-				011B88870033343DC0A80006 /* GoSymbol.m in Sources */,
-				0D8DD65700EF20067F000001 /* sgf.c in Sources */,
-				F6423724014BD0D101000001 /* GoGameNode.m in Sources */,
-				F6423730014C226101000001 /* GoMove.m in Sources */,
-				F634A44E014D53E701000001 /* GoGameTree.m in Sources */,
+				43B8D01E0DC059DB001128F3 /* GoGame.m in Sources */,
+				43B8D01F0DC059DB001128F3 /* GoGameNode.m in Sources */,
+				43B8D0200DC059DB001128F3 /* GoGameTree.m in Sources */,
+				43B8D0210DC059DB001128F3 /* GoGeometry.m in Sources */,
+				43B8D0220DC059DB001128F3 /* GoMove.m in Sources */,
+				43B8D0230DC059DB001128F3 /* GoPoint.m in Sources */,
+				43B8D0240DC059DB001128F3 /* GoPosition.m in Sources */,
+				43B8D0250DC059DB001128F3 /* GoPositionPointEnumerator.m in Sources */,
+				43B8D0260DC059DB001128F3 /* GoRuleSet.m in Sources */,
+				43B8D0270DC059DB001128F3 /* GoSymbol.m in Sources */,
+				43B8D0280DC059DB001128F3 /* sgf.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A37F4CEFDCFA73011CA2CEA /* Sources */ = {
+		43B8D07F0DC05B96001128F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011B881A003322FCC0A80006 /* GobanGMPPlayer.m in Sources */,
-				011B881C003322FCC0A80006 /* GobanHumanPlayer.m in Sources */,
-				011B881D003322FCC0A80006 /* GobanPlayer.m in Sources */,
-				011B881E003322FCC0A80006 /* GobanPreferenceController.m in Sources */,
-				011B881F003322FCC0A80006 /* Goban_main.m in Sources */,
-				053CBFC400333F6FC0A80006 /* GobanMatrix.m in Sources */,
-				053CBFC900333FFFC0A80006 /* gmp.c in Sources */,
-				053CBFCE003342BEC0A80006 /* InfoPanelController.m in Sources */,
-				045C3D8E006D3D487F000001 /* GobanView.m in Sources */,
-				045C3D95006E21E97F000001 /* GobanGameDocument.m in Sources */,
-				045C3DA2006E9FF27F000001 /* GobanRulesInspector.m in Sources */,
-				2C9A069C007FC95E7F000001 /* GobanScoreInspector.m in Sources */,
-				664D73FD00808C7C7F000001 /* GobanToolbar.m in Sources */,
-				00F1B187008520247F000001 /* GobanApplicationDelegate.m in Sources */,
-				F622570A00C8E30C01000001 /* GobanInspectorController.m in Sources */,
-				F61272F600CA541401000001 /* SenInterfaceValidation.m in Sources */,
-				044A809F00CDB7D47F000001 /* GobanBoardView.m in Sources */,
-				018CE32500D2B3FA7F000001 /* GobanGoke.m in Sources */,
-				0115B0D400D941AF7F000001 /* GobanCell.m in Sources */,
-				1543F67E00DD31237F000001 /* GobanMoveInspector.m in Sources */,
-				F62D3787015E0B4E01000001 /* GobanGTPPlayer.m in Sources */,
-				F63BD098015EAAAE01000001 /* GobanProgramPlayer.m in Sources */,
-				F6381FEF016104EF01000001 /* GobanGnuGoPlayer.m in Sources */,
-				F6381FFC0161110401000001 /* GobanGeneralPreferences.m in Sources */,
-				F6382000016111A701000001 /* GobanPreferences.m in Sources */,
-				F63820160161170801000001 /* GobanSoundPreferences.m in Sources */,
-				F63820170161170801000001 /* GobanPlayersPreferences.m in Sources */,
-				F63820180161170801000001 /* GobanDisplayPreferences.m in Sources */,
-				F638953F016500DE01BA2653 /* GobanPlayerDefaults.m in Sources */,
-				F6B2DADE0166615B01A37789 /* GobanUser.m in Sources */,
-				F6B2DAE8016664E601A37789 /* GobanGnuGoPlayerEditor.m in Sources */,
-				F6B2DAF2016669D801A37789 /* GobanPlayerEditor.m in Sources */,
-				F6B2DAF901666FF901A37789 /* GobanProgramPlayerEditor.m in Sources */,
-				F6B2DAFD01677A5401A37789 /* GobanInspector.m in Sources */,
-				F61573C501692CDD01302650 /* GobanProgressItem.m in Sources */,
+				43B8D46E0DC05C3A001128F3 /* gmp.c in Sources */,
+				43B8D46F0DC05C3A001128F3 /* Goban_main.m in Sources */,
+				43B8D4700DC05C3A001128F3 /* GobanApplicationDelegate.m in Sources */,
+				43B8D4710DC05C3A001128F3 /* GobanBoardView.m in Sources */,
+				43B8D4720DC05C3A001128F3 /* GobanCell.m in Sources */,
+				43B8D4730DC05C3A001128F3 /* GobanDisplayPreferences.m in Sources */,
+				43B8D4740DC05C3A001128F3 /* GobanGameDocument.m in Sources */,
+				43B8D4750DC05C3A001128F3 /* GobanGeneralPreferences.m in Sources */,
+				43B8D4760DC05C3A001128F3 /* GobanGMPPlayer.m in Sources */,
+				43B8D4770DC05C3A001128F3 /* GobanGnuGoPlayer.m in Sources */,
+				43B8D4780DC05C3A001128F3 /* GobanGnuGoPlayerEditor.m in Sources */,
+				43B8D4790DC05C3A001128F3 /* GobanGoke.m in Sources */,
+				43B8D47A0DC05C3A001128F3 /* GobanGTPPlayer.m in Sources */,
+				43B8D47B0DC05C3A001128F3 /* GobanHumanPlayer.m in Sources */,
+				43B8D47C0DC05C3A001128F3 /* GobanInspector.m in Sources */,
+				43B8D47D0DC05C3A001128F3 /* GobanInspectorController.m in Sources */,
+				43B8D47E0DC05C3A001128F3 /* GobanMatrix.m in Sources */,
+				43B8D47F0DC05C3A001128F3 /* GobanMoveInspector.m in Sources */,
+				43B8D4800DC05C3A001128F3 /* GobanPlayer.m in Sources */,
+				43B8D4810DC05C3A001128F3 /* GobanPlayerDefaults.m in Sources */,
+				43B8D4820DC05C3A001128F3 /* GobanPlayerEditor.m in Sources */,
+				43B8D4830DC05C3A001128F3 /* GobanPlayersPreferences.m in Sources */,
+				43B8D4840DC05C3A001128F3 /* GobanPreferenceController.m in Sources */,
+				43B8D4850DC05C3A001128F3 /* GobanPreferences.m in Sources */,
+				43B8D4860DC05C3A001128F3 /* GobanProgramPlayer.m in Sources */,
+				43B8D4870DC05C3A001128F3 /* GobanProgramPlayerEditor.m in Sources */,
+				43B8D4880DC05C3A001128F3 /* GobanProgressItem.m in Sources */,
+				43B8D4890DC05C3A001128F3 /* GobanRulesInspector.m in Sources */,
+				43B8D48A0DC05C3A001128F3 /* GobanScoreInspector.m in Sources */,
+				43B8D48B0DC05C3A001128F3 /* GobanSoundPreferences.m in Sources */,
+				43B8D48C0DC05C3A001128F3 /* GobanToolbar.m in Sources */,
+				43B8D48D0DC05C3A001128F3 /* GobanUser.m in Sources */,
+				43B8D48E0DC05C3A001128F3 /* GobanView.m in Sources */,
+				43B8D48F0DC05C3A001128F3 /* InfoPanelController.m in Sources */,
+				43B8D4900DC05C3A001128F3 /* SenInterfaceValidation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		011B885700333007C0A80006 /* PBXTargetDependency */ = {
+		43B8D0890DC05BAB001128F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 011B885800333007C0A80006 /* GoGame */;
-			targetProxy = 43CD7B880DBFCD7D00644FF2 /* PBXContainerItemProxy */;
+			target = 43B8D0080DC05906001128F3 /* GoGame */;
+			targetProxy = 43B8D0880DC05BAB001128F3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1243,178 +1066,110 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		43CD7D2C0DBFCD8300644FF2 /* Development */ = {
+		43B8D00B0DC05907001128F3 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					/Library/Frameworks,
-				);
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "GoGame-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				OPTIMIZATION_CFLAGS = "-O0";
-				OTHER_CFLAGS = " -DDEBUG";
+				OTHER_CFLAGS = "-DDEBUG";
 				OTHER_LDFLAGS = (
-					"-seg1addr",
-					0x10000000,
+					"-framework",
+					Foundation,
 				);
-				OTHER_LIBTOOL_FLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRINCIPAL_CLASS = "";
+				PREBINDING = NO;
 				PRODUCT_NAME = GoGame;
-				SECTORDER_FLAGS = "";
-				SKIP_INSTALL = YES;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = framework;
-				ZERO_LINK = YES;
 			};
 			name = Development;
 		};
-		43CD7D2D0DBFCD8300644FF2 /* Deployment */ = {
+		43B8D00C0DC05907001128F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					/Library/Frameworks,
-				);
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "GoGame-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				OPTIMIZATION_CFLAGS = "-O3";
-				OTHER_CFLAGS = " -DNODEBUG";
 				OTHER_LDFLAGS = (
-					"-seg1addr",
-					0x10000000,
+					"-framework",
+					Foundation,
 				);
-				OTHER_LIBTOOL_FLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRINCIPAL_CLASS = "";
+				PREBINDING = NO;
 				PRODUCT_NAME = GoGame;
-				SECTORDER_FLAGS = "";
-				SKIP_INSTALL = YES;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
-		43CD7D2E0DBFCD8300644FF2 /* Default */ = {
+		43B8D0850DC05B97001128F3 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					/Library/Frameworks,
-				);
-				FRAMEWORK_VERSION = A;
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				OPTIMIZATION_CFLAGS = "-O3";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = (
-					"-seg1addr",
-					0x10000000,
-				);
-				OTHER_LIBTOOL_FLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRINCIPAL_CLASS = "";
-				PRODUCT_NAME = GoGame;
-				SECTORDER_FLAGS = "";
-				SKIP_INSTALL = YES;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = framework;
-			};
-			name = Default;
-		};
-		43CD7D300DBFCD8300644FF2 /* Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "\"$(LOCAL_LIBRARY_DIR)/Frameworks\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "Goban-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				OPTIMIZATION_CFLAGS = "-O0";
-				OTHER_CFLAGS = "\U0001-DDEBUG";
-				PRODUCT_NAME = Goban;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
+				OTHER_CFLAGS = "-DDEBUG";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
 				);
-				WRAPPER_EXTENSION = app;
-				ZERO_LINK = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = Goban;
 			};
 			name = Development;
 		};
-		43CD7D310DBFCD8300644FF2 /* Deployment */ = {
+		43B8D0860DC05B97001128F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(LOCAL_LIBRARY_DIR)/Frameworks\"";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				HEADER_SEARCH_PATHS = "";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "Goban-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				OPTIMIZATION_CFLAGS = "-O3";
-				OTHER_CFLAGS = "\U0001-DNODEBUG";
-				PRODUCT_NAME = Goban;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
 				);
-				WRAPPER_EXTENSION = app;
+				PREBINDING = NO;
+				PRODUCT_NAME = Goban;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
-		};
-		43CD7D320DBFCD8300644FF2 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "\"$(LOCAL_LIBRARY_DIR)/Frameworks\"";
-				HEADER_SEARCH_PATHS = "";
-				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				OPTIMIZATION_CFLAGS = "-O3";
-				PRODUCT_NAME = Goban;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = app;
-			};
-			name = Default;
+			name = Release;
 		};
 		43CD7D340DBFCD8300644FF2 /* Development */ = {
 			isa = XCBuildConfiguration;
@@ -1422,50 +1177,41 @@
 			};
 			name = Development;
 		};
-		43CD7D350DBFCD8300644FF2 /* Deployment */ = {
+		43CD7D350DBFCD8300644FF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
-			name = Deployment;
-		};
-		43CD7D360DBFCD8300644FF2 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		43CD7D2B0DBFCD8300644FF2 /* Build configuration list for PBXFrameworkTarget "GoGame" */ = {
+		43B8D00E0DC05907001128F3 /* Build configuration list for PBXNativeTarget "GoGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				43CD7D2C0DBFCD8300644FF2 /* Development */,
-				43CD7D2D0DBFCD8300644FF2 /* Deployment */,
-				43CD7D2E0DBFCD8300644FF2 /* Default */,
+				43B8D00B0DC05907001128F3 /* Development */,
+				43B8D00C0DC05907001128F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Development;
 		};
-		43CD7D2F0DBFCD8300644FF2 /* Build configuration list for PBXApplicationTarget "Goban" */ = {
+		43B8D0870DC05B97001128F3 /* Build configuration list for PBXNativeTarget "Goban" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				43CD7D300DBFCD8300644FF2 /* Development */,
-				43CD7D310DBFCD8300644FF2 /* Deployment */,
-				43CD7D320DBFCD8300644FF2 /* Default */,
+				43B8D0850DC05B97001128F3 /* Development */,
+				43B8D0860DC05B97001128F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Development;
 		};
 		43CD7D330DBFCD8300644FF2 /* Build configuration list for PBXProject "Goban" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43CD7D340DBFCD8300644FF2 /* Development */,
-				43CD7D350DBFCD8300644FF2 /* Deployment */,
-				43CD7D360DBFCD8300644FF2 /* Default */,
+				43CD7D350DBFCD8300644FF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
 	};

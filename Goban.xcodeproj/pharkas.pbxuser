@@ -1,16 +1,58 @@
 // !$*UTF8*$!
 {
-	011B885800333007C0A80006 /* GoGame */ = {
-		activeExec = 0;
+	011B8809003322FCC0A80006 /* GobanGMPPlayer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {842, 1722}}";
+			sepNavSelRange = "{346, 0}";
+			sepNavVisRange = "{0, 1797}";
+			sepNavWindowFrame = "{{38, 131}, {889, 721}}";
+		};
+	};
+	011B886A0033343DC0A80006 /* GoGeometry.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1000, 756}}";
+			sepNavSelRange = "{1437, 7}";
+			sepNavVisRange = "{855, 766}";
+		};
+	};
+	011B886E0033343DC0A80006 /* GoPoint.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {842, 2688}}";
+			sepNavSelRange = "{4573, 0}";
+			sepNavVisRange = "{4406, 455}";
+			sepNavWindowFrame = "{{61, 110}, {889, 721}}";
+		};
+	};
+	018CE32300D2B3FA7F000001 /* GobanGoke.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {746, 2198}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1197}";
+		};
+	};
+	02E199A800A0C9B57F000001 /* ToDo.notes */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {622, 1274}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 521}";
+			sepNavWindowFrame = "{{107, 68}, {889, 721}}";
+		};
+	};
+	053CBFC700333FFFC0A80006 /* gmp.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {746, 1246}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 537}";
+		};
 	};
 	2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+		activeArchitecture = i386;
 		activeBuildConfigurationName = Development;
-		activeBuildStyle = 00EBEBD0006D37337F000001 /* Development */;
-		activeExecutable = 43CD7B870DBFCD7D00644FF2 /* Goban */;
-		activeTarget = 2A37F4C6FDCFA73011CA2CEA /* Goban */;
+		activeExecutable = 43B8D0830DC05B96001128F3 /* Goban */;
+		activeTarget = 43B8D0810DC05B96001128F3 /* Goban */;
 		codeSenseManager = 43CD7D380DBFCD8300644FF2 /* Code sense */;
 		executables = (
-			43CD7B870DBFCD7D00644FF2 /* Goban */,
+			43B8D0830DC05B96001128F3 /* Goban */,
 		);
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
@@ -18,9 +60,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					243,
+					556,
 					20,
-					48.1626,
+					48,
 					43,
 					43,
 					20,
@@ -35,32 +77,141 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 230673789;
-			PBXWorkspaceStateSaveDate = 230673789;
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					516,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 230709283;
+			PBXWorkspaceStateSaveDate = 230709283;
+		};
+		perUserProjectItems = {
+			43B8CFFF0DC058E2001128F3 /* PBXTextBookmark */ = 43B8CFFF0DC058E2001128F3 /* PBXTextBookmark */;
+			43B8D0000DC058E2001128F3 /* PBXTextBookmark */ = 43B8D0000DC058E2001128F3 /* PBXTextBookmark */;
+			43B8D06A0DC05B27001128F3 /* PBXBookmark */ = 43B8D06A0DC05B27001128F3 /* PBXBookmark */;
+			43B8D06B0DC05B27001128F3 /* PBXTextBookmark */ = 43B8D06B0DC05B27001128F3 /* PBXTextBookmark */;
+			43B8D06D0DC05B27001128F3 /* PBXTextBookmark */ = 43B8D06D0DC05B27001128F3 /* PBXTextBookmark */;
+			43B8D06E0DC05B27001128F3 /* PBXBookmark */ = 43B8D06E0DC05B27001128F3 /* PBXBookmark */;
+			43B8D06F0DC05B27001128F3 /* PBXTextBookmark */ = 43B8D06F0DC05B27001128F3 /* PBXTextBookmark */;
+			43B8D4360DC05C07001128F3 /* PBXTextBookmark */ = 43B8D4360DC05C07001128F3 /* PBXTextBookmark */;
+			43B8D4380DC05C07001128F3 /* PBXTextBookmark */ = 43B8D4380DC05C07001128F3 /* PBXTextBookmark */;
+			43B8D4B20DC05D1C001128F3 /* PBXBookmark */ = 43B8D4B20DC05D1C001128F3 /* PBXBookmark */;
+			43B8D4B30DC05D1C001128F3 /* PBXTextBookmark */ = 43B8D4B30DC05D1C001128F3 /* PBXTextBookmark */;
+			43B8D4C00DC05E7F001128F3 /* PBXTextBookmark */ = 43B8D4C00DC05E7F001128F3 /* PBXTextBookmark */;
+			43B8D4C30DC05E7F001128F3 /* PBXTextBookmark */ = 43B8D4C30DC05E7F001128F3 /* PBXTextBookmark */;
+			43B8D5220DC0605F001128F3 /* PBXTextBookmark */ = 43B8D5220DC0605F001128F3 /* PBXTextBookmark */;
+			43B8D5230DC0605F001128F3 /* PBXBookmark */ = 43B8D5230DC0605F001128F3 /* PBXBookmark */;
+			43B8D5240DC0605F001128F3 /* PBXTextBookmark */ = 43B8D5240DC0605F001128F3 /* PBXTextBookmark */;
+			43B8D5250DC0605F001128F3 /* PBXTextBookmark */ = 43B8D5250DC0605F001128F3 /* PBXTextBookmark */;
+			43B8D5260DC0605F001128F3 /* PBXTextBookmark */ = 43B8D5260DC0605F001128F3 /* PBXTextBookmark */;
+			43B8D5270DC0605F001128F3 /* PBXBookmark */ = 43B8D5270DC0605F001128F3 /* PBXBookmark */;
+			43B8D5280DC0605F001128F3 /* PBXTextBookmark */ = 43B8D5280DC0605F001128F3 /* PBXTextBookmark */;
+			43B8D52E0DC060B4001128F3 /* PBXTextBookmark */ = 43B8D52E0DC060B4001128F3 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 43CD7D370DBFCD8300644FF2 /* Source Control */;
 		userBuildSettings = {
 		};
 	};
-	2A37F4C6FDCFA73011CA2CEA /* Goban */ = {
+	43B8CFFF0DC058E2001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 02E199A800A0C9B57F000001 /* ToDo.notes */;
+		name = "ToDo.notes: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 521;
+		vrLoc = 0;
+	};
+	43B8D0000DC058E2001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 02E199A800A0C9B57F000001 /* ToDo.notes */;
+		name = "ToDo.notes: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 521;
+		vrLoc = 0;
+	};
+	43B8D0080DC05906001128F3 /* GoGame */ = {
+		activeExec = 0;
+	};
+	43B8D06A0DC05B27001128F3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 011B88680033343DC0A80006 /* GoGameDefaults.plist */;
+		name = /Volumes/Data/personalcode/freegoban/GoGame/GoGameDefaults.plist;
+	};
+	43B8D06B0DC05B27001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F6423722014BD0D101000001 /* GoGameNode.m */;
+		name = "GoGameNode.m: 61";
+		rLen = 12;
+		rLoc = 1871;
+		rType = 0;
+		vrLen = 361;
+		vrLoc = 1685;
+	};
+	43B8D06D0DC05B27001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F634A44C014D53E701000001 /* GoGameTree.m */;
+		name = "GoGameTree.m: 25";
+		rLen = 40;
+		rLoc = 1122;
+		rType = 0;
+		vrLen = 701;
+		vrLoc = 652;
+	};
+	43B8D06E0DC05B27001128F3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 011B88680033343DC0A80006 /* GoGameDefaults.plist */;
+		name = /Volumes/Data/personalcode/freegoban/GoGame/GoGameDefaults.plist;
+	};
+	43B8D06F0DC05B27001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F6423722014BD0D101000001 /* GoGameNode.m */;
+		name = "GoGameNode.m: 61";
+		rLen = 12;
+		rLoc = 1871;
+		rType = 0;
+		vrLen = 361;
+		vrLoc = 1685;
+	};
+	43B8D0810DC05B96001128F3 /* Goban */ = {
 		activeExec = 0;
 		executables = (
-			43CD7B870DBFCD7D00644FF2 /* Goban */,
+			43B8D0830DC05B96001128F3 /* Goban */,
 		);
 	};
-	43CD7B870DBFCD7D00644FF2 /* Goban */ = {
+	43B8D0830DC05B96001128F3 /* Goban */ = {
 		isa = PBXExecutable;
-		activeArgIndex = 2147483647;
 		activeArgIndices = (
 		);
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -70,6 +221,142 @@
 		name = Goban;
 		sourceDirectories = (
 		);
+	};
+	43B8D4360DC05C07001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F634A44C014D53E701000001 /* GoGameTree.m */;
+		name = "GoGameTree.m: 63";
+		rLen = 0;
+		rLoc = 1831;
+		rType = 0;
+		vrLen = 709;
+		vrLoc = 716;
+	};
+	43B8D4380DC05C07001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F634A44C014D53E701000001 /* GoGameTree.m */;
+		name = "GoGameTree.m: 63";
+		rLen = 0;
+		rLoc = 1831;
+		rType = 0;
+		vrLen = 709;
+		vrLoc = 716;
+	};
+	43B8D4B20DC05D1C001128F3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 43B8D00A0DC05906001128F3 /* GoGame-Info.plist */;
+		name = "/Volumes/Data/personalcode/freegoban/GoGame-Info.plist";
+	};
+	43B8D4B30DC05D1C001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F622570700C8E30C01000001 /* GobanInspectorController.h */;
+		name = "GobanInspectorController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1216;
+		vrLoc = 0;
+	};
+	43B8D4C00DC05E7F001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018CE32300D2B3FA7F000001 /* GobanGoke.m */;
+		name = "GobanGoke.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1197;
+		vrLoc = 0;
+	};
+	43B8D4C30DC05E7F001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018CE32300D2B3FA7F000001 /* GobanGoke.m */;
+		name = "GobanGoke.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1197;
+		vrLoc = 0;
+	};
+	43B8D4F20DC0600E001128F3 /* Foundation.h */ = {
+		isa = PBXFileReference;
+		name = Foundation.h;
+		path = /System/Library/Frameworks/Foundation.framework/Headers/Foundation.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1085, 1288}}";
+			sepNavSelRange = "{204, 37}";
+			sepNavVisRange = "{79, 383}";
+		};
+	};
+	43B8D5220DC0605F001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 43B8D4F20DC0600E001128F3 /* Foundation.h */;
+		name = "Foundation.h: 12";
+		rLen = 37;
+		rLoc = 204;
+		rType = 0;
+		vrLen = 649;
+		vrLoc = 0;
+	};
+	43B8D5230DC0605F001128F3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 43B8D00A0DC05906001128F3 /* GoGame-Info.plist */;
+		name = "/Volumes/Data/personalcode/freegoban/GoGame-Info.plist";
+	};
+	43B8D5240DC0605F001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053CBFC700333FFFC0A80006 /* gmp.h */;
+		name = "gmp.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 537;
+		vrLoc = 0;
+	};
+	43B8D5250DC0605F001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F622570700C8E30C01000001 /* GobanInspectorController.h */;
+		name = "GobanInspectorController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 869;
+		vrLoc = 0;
+	};
+	43B8D5260DC0605F001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 43B8D4F20DC0600E001128F3 /* Foundation.h */;
+		name = "Foundation.h: 12";
+		rLen = 37;
+		rLoc = 204;
+		rType = 0;
+		vrLen = 649;
+		vrLoc = 0;
+	};
+	43B8D5270DC0605F001128F3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 43B8D00A0DC05906001128F3 /* GoGame-Info.plist */;
+		name = "/Volumes/Data/personalcode/freegoban/GoGame-Info.plist";
+	};
+	43B8D5280DC0605F001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 053CBFC700333FFFC0A80006 /* gmp.h */;
+		name = "gmp.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 537;
+		vrLoc = 0;
+	};
+	43B8D52E0DC060B4001128F3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F622570700C8E30C01000001 /* GobanInspectorController.h */;
+		name = "GobanInspectorController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 869;
+		vrLoc = 0;
 	};
 	43CD7D370DBFCD8300644FF2 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -82,5 +369,28 @@
 	43CD7D380DBFCD8300644FF2 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	F622570700C8E30C01000001 /* GobanInspectorController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {746, 490}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 869}";
+		};
+	};
+	F634A44C014D53E701000001 /* GoGameTree.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1000, 1078}}";
+			sepNavSelRange = "{1831, 0}";
+			sepNavVisRange = "{844, 599}";
+			sepNavWindowFrame = "{{38, 131}, {889, 721}}";
+		};
+	};
+	F6423722014BD0D101000001 /* GoGameNode.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {746, 2422}}";
+			sepNavSelRange = "{1871, 12}";
+			sepNavVisRange = "{1685, 361}";
+			sepNavWindowFrame = "{{176, 5}, {889, 721}}";
+		};
 	};
 }

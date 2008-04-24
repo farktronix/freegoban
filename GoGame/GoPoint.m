@@ -170,6 +170,7 @@ static NSMutableDictionary *pointCaches = nil;
 
 - (void) dealloc
 {
+    [super dealloc];
 }
 
 - (NSString *) description

@@ -37,7 +37,7 @@
 @implementation NSString (SGFExtensions)
 - (SGFPropertyID) propertyID
 {
-    return sgf_property_id_with_name([self cString]);
+    return sgf_property_id_with_name([self cStringUsingEncoding:NSUTF8StringEncoding]);
 }
 @end
 
@@ -99,7 +99,7 @@
 
 - (void) cacheSibling
 {
-    sibling = [[self classForNode:SIBLING(node)] initWithGame:[self game] node:SIBLING(node)];
+    sibling = [[[self classForNode:SIBLING(node)] alloc] initWithGame:[self game] node:SIBLING(node)];
     [sibling setParent:parent];
 }
 
@@ -189,7 +189,7 @@
 - (void) setStringValue:(NSString *) aString forKey:(NSString *) aKey
 {
     [self removeValueForKey:aKey];
-    sgf_set_property(node, [aKey propertyID], SGF_VALUE_TYPE_TEXT, [aString cString]);
+    sgf_set_property(node, [aKey propertyID], SGF_VALUE_TYPE_TEXT, [aString cStringUsingEncoding:NSUTF8StringEncoding]);
 }
 
 

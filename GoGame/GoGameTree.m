@@ -22,7 +22,7 @@
 - (id) initWithGame:(GoGame *) aGame contentsOfFile:(NSString *)aPath
 {
     SGFTree *tree = NULL;
-    FILE *sgffile = fopen([aPath cString], "r");
+    FILE *sgffile = fopen([aPath cStringUsingEncoding:NSUTF8StringEncoding], "r");
     
     if (sgffile != NULL) {
         tree = sgf_parse (sgffile);
@@ -60,7 +60,7 @@
 
 - (BOOL) writeToFile:(NSString *) path
 {
-    FILE *sgffile = fopen([path cString], "w");
+    FILE *sgffile = fopen([path cStringUsingEncoding:NSUTF8StringEncoding], "w");
     if (sgffile != NULL) {
         SGFTree *collection = node->parent;
         if (collection == NULL) {

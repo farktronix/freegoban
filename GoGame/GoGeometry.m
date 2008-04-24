@@ -25,7 +25,7 @@
 
 IntPoint IntPointFromString(NSString *aString)
 {
-    const char *cString = [aString cString];
+    const char *cString = [aString cStringUsingEncoding:NSUTF8StringEncoding];
     assert ([aString length] == 2);
     return MakeIntPoint (toupper(cString[1]) - 'A', toupper(cString[0]) - 'A');
 }
